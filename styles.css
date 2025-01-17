@@ -1,58 +1,138 @@
-/* General table styling */
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Boxed Layout */
+.app-container {
+  max-width: 900px; /* Set a fixed width */
+  margin: 40px auto; /* Center horizontally */
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for boxed effect */
+}
+
+/* Page title */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+/* Section container */
+.food-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the table horizontally */
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section header */
+.food-section h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #4CAF50;
+  text-transform: capitalize;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+/* Table Styling */
 .food-table {
-  width: 100%;
-  margin-top: 20px;
+  width: auto; /* Fit table to content */
+  margin: 0 auto; /* Center the table */
   border-collapse: collapse;
   background-color: #fff;
-  border: 1px solid #ddd; /* Add table borders */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+  border: 1px solid #ccc;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Table header styling */
+.food-table thead {
+  background-color: #4CAF50; /* Green header background */
+  color: white; /* White text for contrast */
+  font-weight: bold;
 }
 
 .food-table th,
 .food-table td {
-  border: 1px solid #ddd; /* Add borders to table cells */
-  padding: 10px;
+  border: 1px solid #ccc; /* Add borders to all cells */
+  padding: 12px;
   text-align: left;
 }
 
-.food-table thead {
-  background-color: #4CAF50; /* Green header */
-  color: #fff;
-  border-bottom: 2px solid #ddd;
-}
-
-/* Row hover effect */
+/* Table row hover effect */
 .food-table tbody tr:hover {
-  background-color: #f9f9f9;
+  background-color: #f9f9f9; /* Light gray on hover */
 }
 
-/* Add Serving button styling */
+/* Add Serving Button Styling */
 button.add-serving {
-  padding: 8px 12px;
+  padding: 10px 15px;
   background-color: #4CAF50; /* Green color */
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 button.add-serving:hover {
   background-color: #45a049; /* Darker green on hover */
 }
 
-/* Remove button styling */
+/* Remove Button Styling */
 button.remove-serving {
-  padding: 8px 12px;
-  background-color: red;
+  padding: 10px 15px;
+  background-color: red; /* Red for remove buttons */
   color: white;
   border: none;
   border-radius: 5px;
-  margin-left: 10px;
   cursor: pointer;
   font-size: 14px;
+  margin-left: 10px;
 }
 
 button.remove-serving:hover {
   background-color: darkred; /* Darker red on hover */
+}
+
+/* Fiber Stats Styling */
+#fiber-stats {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Fiber Consumed List */
+#fiber-consumed-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+#fiber-consumed-list li {
+  margin-bottom: 8px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
