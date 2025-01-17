@@ -1631,6 +1631,72 @@ document.addEventListener('DOMContentLoaded', () => {
     "UK Cereal Brands"
   ];
 
+  // Group food data by type
+  const foodByType = foodData.reduce((acc, food) => {
+    if (!acc[food["Food Type"]]) {
+      acc[food["Food Type"]] = [];
+    }
+    acc[food["Food Type"]].push(food);
+    return acc;
+  }, {});
+
+  // Debugging: Log grouped food data
+  console.log("Grouped food data by type:", foodByType);
+
+  // Container for tables
+  const tablesContainer = document.getElementById('food-tables-container');
+
+  // Generate tables based on the specified order
+  tableOrder.forEach((foodType) => {
+    const foods = foodByType[foodType];
+    if (!foods) {
+      console.log(`Skipping ${foodType}: No data found.`);
+      return; // Skip if no data for this food type
+    }
+
+    // Create section and table for the current food type
+    const section = document.createElement('div');
+    section.classList.add('food-section');
+
+    const header = document.createElement('h2');
+    header.textContent = foodType;
+    section.appendChild(header);
+
+    const table = document.createElement('table');
+    table.classList.add('food-table');
+    table.innerHTML = `
+      <thead>
+        <tr>
+          <th>Food</th>
+          <th>Typical Serving Size (g)</th>
+          <th>Fiber Per Serving (g)</th>
+          <th>Source</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${foods
+          .map(
+            (food) => `
+        <tr>
+          <td>${food["Food"]}</td>
+          <td>${food["Typical serving size (grams)"]}</td>
+          <td>${food["Fiber Per Serving"].toFixed(1)}</td>
+          <td>${food["Source"]}</td>
+          <td><button class="add-serving" data-fiber="${food["Fiber Per Serving"]}">Add Serving</button></td>
+        </tr>
+      `
+          )
+          .join('')}
+      </tbody>
+    `;
+    section.appendChild(table);
+    tablesContainer.appendChild(section);
+
+    console.log(`Table created for food type: ${foodType}`);
+  });
+});
+
  let fiberGoal = 0; // Initialize fiber goal
   let totalFiberConsumed = 0; // Track total fiber consumed
 
