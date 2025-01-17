@@ -1631,15 +1631,10 @@ const tableOrder = [
     "UK Cereal Brands"
   ];
 
-document.addEventListener('DOMContentLoaded', () => {
 
 let fiberGoal = 0;
   let totalFiberConsumed = 0;
 
-  // Handle setting the fiber goal
-  const form = document.getElementById('fiber-goal-form');
-  form.addEventListener('submit', (event) => {
-    event.preventDefault(); // Prevent the form from reloading the page
 
     const fiberGoalInput = document.getElementById('fiber-goal');
     fiberGoal = parseFloat(fiberGoalInput.value);
