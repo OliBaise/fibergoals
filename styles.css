@@ -1,105 +1,99 @@
-/* General body styling with light blue background */
+/* General page styling */
 body {
-    font-size: 18px;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #e3f2fd; /* Light blue background */
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  color: #333;
 }
 
-/* Suggestions dropdown styling */
-#suggestions {
-    position: absolute;
-    background-color: white;
-    border: 1px solid #ccc;
-    max-height: 150px;
-    overflow-y: auto;
-    z-index: 1000;
+/* Section container */
+.food-section {
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
 }
 
-#suggestions div {
-    padding: 8px;
-    cursor: pointer;
-}
-
-#suggestions div:hover {
-    background-color: #f1f1f1;
-}
-
-/* Container for centered content */
-.container {
-    max-width: 800px;
-    margin: auto;
-    background-color: white; /* White background for container */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the container */
-}
-
-/* Styling for input groups */
-.input-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input, button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    font-size: 16px;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-/* Results section styling */
-.results {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.results p {
-    margin: 5px 0;
-    font-size: 18px;
+/* Section header */
+.food-section h2 {
+  font-size: 20px;
+  color: #333;
+  margin: 0 0 15px;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
 }
 
 /* Table styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    font-size: 16px;
+.food-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #fff;
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+/* Table header styling */
+.food-table thead {
+  background-color: #4CAF50;
+  color: white;
 }
 
-th {
-    background-color: #f2f2f2;
-    font-weight: bold;
+.food-table th {
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+  border: 1px solid #ddd;
 }
 
-/* Additional readability improvements */
-p, td {
-    font-size: 18px;
-    line-height: 1.6;
+/* Table body styling */
+.food-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Row hover effect */
+.food-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Action buttons */
+button {
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Remove button */
+button.remove-serving {
+  background-color: red;
+  margin-left: 10px;
+}
+
+button.remove-serving:hover {
+  background-color: darkred;
+}
+
+/* Consumed list styling */
+#fiber-consumed-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#fiber-consumed-list li {
+  margin-bottom: 8px;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
