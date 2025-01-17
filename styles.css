@@ -9,9 +9,9 @@ body {
 
 /* Page title */
 h1 {
-  text-align: center;
+  text-align: left;
   font-size: 28px;
-  color: #4CAF50;
+  color: black;
   margin-bottom: 30px;
 }
 
