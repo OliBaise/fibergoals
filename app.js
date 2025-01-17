@@ -1619,6 +1619,18 @@ document.addEventListener('DOMContentLoaded', () => {
  }
 ];
 
+  const tableOrder = [
+    "Beans, pulses and legumes",
+    "Vegetables",
+    "Fruit",
+    "Nuts and seeds",
+    "Grains",
+    "Breads",
+    "Pasta/Rice",
+    "US Cereal brands",
+    "UK Cereal Brands"
+  ];
+
  let fiberGoal = 0; // Initialize fiber goal
   let totalFiberConsumed = 0; // Track total fiber consumed
 
