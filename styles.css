@@ -1,11 +1,10 @@
 /* General page styling */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
+  background-color: #f4f4f4;
   margin: 0;
   padding: 20px;
   color: #333;
-  line-height: 1.6;
 }
 
 /* Page title */
@@ -13,7 +12,7 @@ h1 {
   text-align: center;
   font-size: 28px;
   color: #4CAF50;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 /* Section container */
@@ -21,17 +20,16 @@ h1 {
   margin-bottom: 30px;
   background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
 /* Section header */
 .food-section h2 {
   font-size: 20px;
-  margin-bottom: 15px;
+  margin: 0 0 15px;
   color: #4CAF50;
-  text-transform: capitalize;
   border-bottom: 2px solid #4CAF50;
   padding-bottom: 5px;
 }
@@ -40,15 +38,14 @@ h1 {
 .food-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 10px;
+  margin-top: 15px;
   background-color: #fff;
 }
 
-/* Table header styling */
+/* Table header */
 .food-table thead {
   background-color: #4CAF50;
   color: white;
-  text-align: left;
 }
 
 .food-table th {
@@ -57,21 +54,21 @@ h1 {
   border: 1px solid #ddd;
 }
 
-/* Table body styling */
+/* Table body */
 .food-table td {
   padding: 10px;
   border: 1px solid #ddd;
   text-align: left;
 }
 
-/* Row hover effect */
+/* Hover effect */
 .food-table tbody tr:hover {
-  background-color: #f1f1f1;
+  background-color: #f9f9f9;
 }
 
 /* Button styling */
 button {
-  padding: 8px 12px;
+  padding: 10px 15px;
   background-color: #4CAF50;
   color: white;
   border: none;
@@ -94,29 +91,27 @@ button.remove-serving:hover {
   background-color: darkred;
 }
 
-/* Consumed list styling */
+/* Fiber stats container */
+#fiber-stats {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Fiber consumed list */
 #fiber-consumed-list ul {
   list-style: none;
   padding: 0;
 }
 
 #fiber-consumed-list li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   padding: 10px;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-/* Remaining fiber and consumed list */
-#fiber-stats {
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
