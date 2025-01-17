@@ -1619,25 +1619,23 @@ document.addEventListener('DOMContentLoaded', () => {
  }
 ];
 
-const tableOrder = [
-    "Beans, pulses and legumes",
-    "Vegetables",
-    "Fruit",
-    "Nuts and seeds",
-    "Grains",
-    "Breads",
-    "Pasta/Rice",
-    "US Cereal brands",
-    "UK Cereal Brands"
-  ];
-
-
 let fiberGoal = 0;
   let totalFiberConsumed = 0;
 
+  // Handle setting the fiber goal
+  const form = document.getElementById('fiber-goal-form');
+  form.addEventListener('submit', (event) => {
+    event.preventDefault(); // Prevent the form from reloading the page
 
     const fiberGoalInput = document.getElementById('fiber-goal');
     fiberGoal = parseFloat(fiberGoalInput.value);
+
+    if (fiberGoal > 0) {
+      updateRemainingFiber();
+    } else {
+      alert('Please enter a valid fiber goal.');
+    }
+  });
 
   // Group food by type
   const foodByType = foodData.reduce((acc, food) => {
@@ -1731,16 +1729,6 @@ let fiberGoal = 0;
         updateRemainingFiber();
       });
     });
-  });
-
-  // Set goal button handler
-  document.getElementById('set-goal').addEventListener('click', () => {
-    fiberGoal = parseFloat(document.getElementById('fiber-goal').value);
-    if (fiberGoal > 0) {
-      updateRemainingFiber();
-    } else {
-      alert('Please enter a valid fiber goal.');
-    }
   });
 
   // Update remaining fiber
