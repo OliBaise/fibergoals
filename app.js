@@ -1657,7 +1657,7 @@ let fiberGoal = 0;
 
     // Create table
     const table = document.createElement('table');
-    table.classList.add('food-table');
+    table.classList.add('food-tables-container');
     table.innerHTML = `
       <thead>
         <tr>
