@@ -7,14 +7,14 @@ body {
   color: #333;
 }
 
-/* Container for centered content */
-.container {
-    max-width: 800px;
-    margin: auto;
-    background-color: white; /* White background for container */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the container */
+/* Section container */
+.food-section {
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
 }
 
 /* Section header */
