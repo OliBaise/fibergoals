@@ -894,7 +894,7 @@ document.addEventListener('DOMContentLoaded', () => {
   "Food": "Kellogg's All-Bran Original Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
   "Fiber Per Gram": 0.9,
-  "Fiber Per Serving": 36,
+  "Fiber Per Serving": 18,
   "Source": "4"
  },
  {
@@ -979,14 +979,6 @@ document.addEventListener('DOMContentLoaded', () => {
  },
  {
   "Food Type": "US cereal brands",
-  "Food": "Kellogg's All Bran",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.022,
-  "Fiber Per Serving": 0.9,
-  "Source": "2"
- },
- {
-  "Food Type": "US cereal brands",
   "Food": "Banana Nut Crunch",
   "Typical serving size (grams)": "40 grams (1 bowl)",
   "Fiber Per Gram": 0.068,
@@ -1019,7 +1011,7 @@ document.addEventListener('DOMContentLoaded', () => {
  },
  {
   "Food Type": "US cereal brands",
-  "Food": "Cracklin? Oat Bran, Kellogg?s",
+  "Food": "Kellogs Cracklin Oat Bran",
   "Typical serving size (grams)": "40 grams (1 bowl)",
   "Fiber Per Gram": 0.1,
   "Fiber Per Serving": 4,
@@ -1083,7 +1075,7 @@ document.addEventListener('DOMContentLoaded', () => {
  },
  {
   "Food Type": "US cereal brands",
-  "Food": "Kellogg's Raising Bran",
+  "Food": "Kellogg's Raisin Bran",
   "Typical serving size (grams)": "40 grams (1 bowl)",
   "Fiber Per Gram": 0.139,
   "Fiber Per Serving": 5.6,
