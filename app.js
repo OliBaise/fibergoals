@@ -1619,22 +1619,36 @@ document.addEventListener('DOMContentLoaded', () => {
  }
 ];
 
-const tableOrder = [
-    "Beans, pulses and legumes",
-    "Vegetables",
-    "Fruit",
-    "Nuts and seeds",
-    "Grains",
-    "Breads",
-    "Pasta/Rice",
-    "US Cereal brands",
-    "UK Cereal Brands"
-  ];
+ let fiberGoal = 0; // Initialize fiber goal
+  let totalFiberConsumed = 0; // Track total fiber consumed
 
-let fiberGoal = 0;
-  let totalFiberConsumed = 0;
+  // Handle setting the fiber goal
+  const form = document.getElementById('fiber-goal-form');
+  form.addEventListener('submit', (event) => {
+    event.preventDefault(); // Prevent form submission from reloading the page
 
-  // Group food by type
+    const fiberGoalInput = document.getElementById('fiber-goal');
+    const inputGoal = parseFloat(fiberGoalInput.value); // Get the entered fiber goal
+
+    if (isNaN(inputGoal) || inputGoal <= 0) {
+      alert('Please enter a valid fiber goal.');
+    } else {
+      fiberGoal = inputGoal; // Set the fiber goal
+      updateRemainingFiber(); // Update the display for remaining fiber
+    }
+  });
+
+  // Update the remaining fiber display
+  function updateRemainingFiber() {
+    const remainingFiber = fiberGoal - totalFiberConsumed;
+    document.getElementById('remaining-fiber').querySelector('span').textContent = remainingFiber.toFixed(2);
+
+    if (remainingFiber <= 0) {
+      alert('Congratulations! You have met your fiber goal.');
+    }
+  }
+
+  // Dynamically generate food tables
   const foodByType = foodData.reduce((acc, food) => {
     if (!acc[food["Food Type"]]) {
       acc[food["Food Type"]] = [];
@@ -1643,19 +1657,18 @@ let fiberGoal = 0;
     return acc;
   }, {});
 
-  // Generate tables in the specified order
   const tablesContainer = document.getElementById('food-tables-container');
-
-  tableOrder.forEach((foodType) => {
+  Object.keys(foodByType).forEach((foodType) => {
     const foods = foodByType[foodType];
-    if (!foods) return; // Skip food types that aren't in the data
 
-    // Create header for food type
+    // Create section and table
+    const section = document.createElement('div');
+    section.classList.add('food-section');
+
     const header = document.createElement('h2');
     header.textContent = foodType;
-    tablesContainer.appendChild(header);
+    section.appendChild(header);
 
-    // Create table
     const table = document.createElement('table');
     table.classList.add('food-tables-container');
     table.innerHTML = `
@@ -1669,82 +1682,57 @@ let fiberGoal = 0;
         </tr>
       </thead>
       <tbody>
-        <!-- Rows will be dynamically generated -->
+        ${foods
+          .map(
+            (food) => `
+        <tr>
+          <td>${food["Food"]}</td>
+          <td>${food["Typical serving size (grams)"]}</td>
+          <td>${food["Fiber Per Serving"].toFixed(1)}</td>
+          <td>${food["Source"]}</td>
+          <td><button class="add-serving" data-fiber="${food["Fiber Per Serving"]}">Add Serving</button></td>
+        </tr>
+      `
+          )
+          .join('')}
       </tbody>
     `;
-    tablesContainer.appendChild(table);
+    section.appendChild(table);
+    tablesContainer.appendChild(section);
+  });
 
-    const tableBody = table.querySelector('tbody');
+  // Add event listeners to the "Add Serving" buttons
+  document.querySelectorAll('.add-serving').forEach((button) => {
+    button.addEventListener('click', (event) => {
+      if (fiberGoal <= 0) {
+        alert('Please set your daily fiber goal before adding foods.');
+        return;
+      }
 
-    // Populate rows for the current food type
-    foods.forEach((food, index) => {
-      const row = document.createElement('tr');
-      row.innerHTML = `
-        <td>${food["Food"]}</td>
-        <td>${food["Typical serving size (grams)"]}</td>
-        <td>${food["Fiber Per Serving"].toFixed(1)}</td>
-        <td>${food["Source"]}</td>
-        <td>
-          <button class="add-serving" data-index="${index}" data-food-type="${food["Food Type"]}">Add Serving</button>
-        </td>
+      const fiberPerServing = parseFloat(event.target.getAttribute('data-fiber'));
+      totalFiberConsumed += fiberPerServing;
+
+      // Update the fiber consumed list
+      const foodName =
+        event.target.closest('tr').querySelector('td:first-child').textContent;
+      const listItem = document.createElement('li');
+      listItem.innerHTML = `
+        1 portion of ${foodName}
+        <button class="remove-serving" data-fiber="${fiberPerServing}">Remove</button>
       `;
-      tableBody.appendChild(row);
+      document.getElementById('consumed-list').appendChild(listItem);
 
-      // Add event listener for the "Add Serving" button
-      row.querySelector('.add-serving').addEventListener('click', () => {
-        if (fiberGoal <= 0) {
-          alert("Please add a daily fiber goal before you add foods");
-          return;
-        }
+      // Add event listener for remove button
+      listItem.querySelector('.remove-serving').addEventListener('click', (event) => {
+        const fiberRemoved = parseFloat(event.target.getAttribute('data-fiber'));
+        totalFiberConsumed -= fiberRemoved;
 
-        const fiberPerServing = food["Fiber Per Serving"];
-        const foodName = food["Food"];
-        const servingSize = food["Typical serving size (grams)"];
-
-        totalFiberConsumed += fiberPerServing;
-
-        // Add to consumed list with a remove button
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `
-          1 portion of ${foodName} (${servingSize})
-          <button class="remove-serving" data-fiber="${fiberPerServing}" style="color: white; background: red; border: none; padding: 5px 10px; margin-left: 10px; cursor: pointer;">Remove</button>
-        `;
-        document.getElementById('consumed-list').appendChild(listItem);
-
-        // Add remove button functionality
-        listItem.querySelector('.remove-serving').addEventListener('click', (event) => {
-          const fiberRemoved = parseFloat(event.target.getAttribute('data-fiber'));
-          totalFiberConsumed -= fiberRemoved;
-
-          // Remove the list item
-          listItem.remove();
-
-          // Update remaining fiber
-          updateRemainingFiber();
-        });
-
+        // Remove the list item
+        event.target.closest('li').remove();
         updateRemainingFiber();
       });
+
+      updateRemainingFiber();
     });
   });
-
-  // Set goal button handler
-  document.getElementById('set-goal').addEventListener('click', () => {
-    fiberGoal = parseFloat(document.getElementById('fiber-goal').value);
-    if (fiberGoal > 0) {
-      updateRemainingFiber();
-    } else {
-      alert('Please enter a valid fiber goal.');
-    }
-  });
-
-  // Update remaining fiber
-  function updateRemainingFiber() {
-    const remainingFiber = fiberGoal - totalFiberConsumed;
-    document.getElementById('remaining-fiber').querySelector('span').textContent = remainingFiber.toFixed(2);
-
-    if (remainingFiber <= 0) {
-      alert('Congratulations! You have met your fiber goal.');
-    }
-  }
 });
