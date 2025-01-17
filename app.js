@@ -1631,6 +1631,8 @@ const tableOrder = [
     "UK Cereal Brands"
   ];
 
+document.addEventListener('DOMContentLoaded', () => {
+
 let fiberGoal = 0;
   let totalFiberConsumed = 0;
 
