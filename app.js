@@ -1869,9 +1869,9 @@ Object.keys(foodByType).forEach((foodType) => {
   tablesContainer.appendChild(section);
 });
 
-// Add event listeners to the "Add Serving" buttons
-document.querySelectorAll('.add-serving').forEach((button) => {
-  button.addEventListener('click', (event) => {
+// Delegate click events to the tables container for dynamically added buttons
+tablesContainer.addEventListener('click', (event) => {
+  if (event.target.classList.contains('add-serving')) {
     if (fiberGoal <= 0) {
       alert('Please set your daily fiber goal before adding foods.');
       return;
@@ -1890,7 +1890,7 @@ document.querySelectorAll('.add-serving').forEach((button) => {
     `;
     document.getElementById('consumed-list').appendChild(listItem);
 
-    // Add event listener for remove button
+    // Add event listener for the remove button
     listItem.querySelector('.remove-serving').addEventListener('click', (event) => {
       const fiberRemoved = parseFloat(event.target.getAttribute('data-fiber'));
       totalFiberConsumed -= fiberRemoved;
@@ -1901,5 +1901,5 @@ document.querySelectorAll('.add-serving').forEach((button) => {
     });
 
     updateRemainingFiber();
-  });
+  }
 });
