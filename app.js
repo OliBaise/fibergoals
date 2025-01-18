@@ -444,7 +444,7 @@ document.addEventListener('DOMContentLoaded', () => {
  {
   "Food Type": "Vegetables",
   "Food": "Eggplant\/Aubergine",
-  "Typical serving size (grams)": "150 grams (1\/2 eggplant\/aubergine)",
+  "Typical serving size (grams)": "150 grams (1\2 eggplant/aubergine)",
   "Fiber Per Gram": 0.003,
   "Fiber Per Serving": 0.5,
   "Source": "2"
@@ -476,7 +476,7 @@ document.addEventListener('DOMContentLoaded', () => {
  {
   "Food Type": "Vegetables",
   "Food": "Onion",
-  "Typical serving size (grams)": "80 grams (1\/2 an onion)",
+  "Typical serving size (grams)": "80 grams (1\2 an onion)",
   "Fiber Per Gram": 0.013,
   "Fiber Per Serving": 1,
   "Source": "2"
@@ -516,7 +516,7 @@ document.addEventListener('DOMContentLoaded', () => {
  {
   "Food Type": "Vegetables",
   "Food": "Squash",
-  "Typical serving size (grams)": "116 grams (1\/2 a squash)",
+  "Typical serving size (grams)": "116 grams (1\2 a squash)",
   "Fiber Per Gram": 0.026,
   "Fiber Per Serving": 3,
   "Source": "2"
@@ -524,7 +524,7 @@ document.addEventListener('DOMContentLoaded', () => {
  {
   "Food Type": "Vegetables",
   "Food": "Sweet potato with skin on",
-  "Typical serving size (grams)": "130 grams (1\/2 a sweet potato)",
+  "Typical serving size (grams)": "130 grams (1\2 a sweet potato)",
   "Fiber Per Gram": 0.023,
   "Fiber Per Serving": 3,
   "Source": "2"
@@ -889,7 +889,7 @@ document.addEventListener('DOMContentLoaded', () => {
   "Fiber Per Serving": 1.5,
   "Source": "2"
  },
-                           {
+  {
   "Food Type": "Fruit",
   "Food": "Apple (skin on)",
   "Typical serving size (grams)": "100 grams (1 apple)",
