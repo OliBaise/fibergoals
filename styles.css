@@ -72,7 +72,7 @@ th {
 button.add-serving {
   padding: 10px 15px;
   background-color: #4CAF50; /* Green button */
-  color: white;
+  color: green;
   border: none;
   border-radius: 5px;
   cursor: pointer;
