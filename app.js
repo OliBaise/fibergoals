@@ -813,152 +813,152 @@ document.addEventListener('DOMContentLoaded', () => {
   "Food Type": "UK cereal brands",
   "Food": "Kellogg's Crunchy Nut Breakfast Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.083,
-  "Fiber Per Serving": 3.3,
+  "Fiber Per Gram": 0.025,
+  "Fiber Per Serving": 1,
   "Source": "4"
  },
  {
   "Food Type": "UK cereal brands",
   "Food": "Kellogg's Frosties Breakfast Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.067,
-  "Fiber Per Serving": 2.7,
+  "Fiber Per Gram": 0.023,
+  "Fiber Per Serving": 0.9,
   "Source": "4"
  },
  {
   "Food Type": "UK cereal brands",
   "Food": "Kellogg's Corn Flakes Breakfast Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.1,
-  "Fiber Per Serving": 4,
+  "Fiber Per Gram": 0.028,
+  "Fiber Per Serving": 1.1,
   "Source": "4"
  },
  {
   "Food Type": "UK cereal brands",
   "Food": "Golden Nuggets Nestle Golden Nuggets Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.233,
-  "Fiber Per Serving": 9.3,
+  "Fiber Per Gram": 0.048,
+  "Fiber Per Serving": 1.9,
   "Source": "4"
  },
  {
   "Food Type": "UK cereal brands",
   "Food": "Kellogg's Crunchy Nut Honey & Nut Clusters Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.157,
-  "Fiber Per Serving": 6.3,
+  "Fiber Per Gram": 0.025,
+  "Fiber Per Serving": 1,
   "Source": "4"
  },
  {
   "Food Type": "UK cereal brands",
   "Food": "Kellogg's Special K Peach & Apricot Breakfast Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.187,
-  "Fiber Per Serving": 7.5,
+  "Fiber Per Gram": 0.0425,
+  "Fiber Per Serving": 1.7,
   "Source": "4"
  },
  {
   "Food Type": "UK cereal brands",
   "Food": "Kellogg's Just Right Breakfast Flakes Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.15,
-  "Fiber Per Serving": 6,
+  "Fiber Per Gram": 0.045,
+  "Fiber Per Serving": 1.8,
   "Source": "4"
  },
  {
   "Food Type": "UK cereal brands",
   "Food": "Kellogg's Blueberry Wheats Breakfast Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.267,
-  "Fiber Per Serving": 10.7,
+  "Fiber Per Gram": 0.085,
+  "Fiber Per Serving": 3.4,
   "Source": "4"
  },
  {
   "Food Type": "UK cereal brands",
   "Food": "Kellogg's Apricot Wheats Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.263,
-  "Fiber Per Serving": 10.5,
+  "Fiber Per Gram": 0.825,
+  "Fiber Per Serving": 3.3,
   "Source": "4"
  },
  {
   "Food Type": "UK cereal brands",
   "Food": "Kellogg's Krave Chocolate Hazelnut Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.12,
-  "Fiber Per Serving": 4.8,
+  "Fiber Per Gram": 0.058,
+  "Fiber Per Serving": 2.3,
   "Source": "4"
  },
  {
   "Food Type": "UK cereal brands",
   "Food": "Kellogg's All-Bran Original Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.9,
-  "Fiber Per Serving": 18,
+  "Fiber Per Gram": 0.275,
+  "Fiber Per Serving": 11,
   "Source": "4"
  },
  {
   "Food Type": "UK cereal brands",
   "Food": "Kellogg's Crunchy Nut Clusters Chocolate Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.15,
-  "Fiber Per Serving": 6,
+  "Fiber Per Gram": 0.025,
+  "Fiber Per Serving": 1,
   "Source": "4"
  },
  {
   "Food Type": "UK cereal brands",
   "Food": "Kellogg's Coco Pops Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.127,
-  "Fiber Per Serving": 5.1,
+  "Fiber Per Gram": 0.035,
+  "Fiber Per Serving": 1.4,
   "Source": "4"
  },
  {
   "Food Type": "UK cereal brands",
   "Food": "Shredded Wheat Nestle Shredded Wheat Honey Nut Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.34,
-  "Fiber Per Serving": 13.6,
+  "Fiber Per Gram": 0.135,
+  "Fiber Per Serving": 5.4,
   "Source": "4"
  },
  {
   "Food Type": "UK cereal brands",
   "Food": "Kellogg's Special K Milk Chocolate Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.177,
-  "Fiber Per Serving": 7.1,
+  "Fiber Per Gram": 0.045,
+  "Fiber Per Serving": 1.8,
   "Source": "4"
  },
  {
   "Food Type": "UK cereal brands",
   "Food": "Lion Nestle Lion Caramel & Chocolate Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.233,
-  "Fiber Per Serving": 9.3,
+  "Fiber Per Gram": 0.053,
+  "Fiber Per Serving": 2.1,
   "Source": "4"
  },
  {
   "Food Type": "UK cereal brands",
   "Food": "Nestle Curiously Cinnamon Churros Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.167,
-  "Fiber Per Serving": 6.7,
+  "Fiber Per Gram": 0.05,
+  "Fiber Per Serving": 2,
   "Source": "4"
  },
  {
   "Food Type": "UK cereal brands",
   "Food": "Kellogg's Chocolate Wheats Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.333,
-  "Fiber Per Serving": 13.3,
+  "Fiber Per Gram": 0.105,
+  "Fiber Per Serving": 4.2,
   "Source": "4"
  },
  {
   "Food Type": "UK cereal brands",
   "Food": "Weetabix Crunchy Bran Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.733,
-  "Fiber Per Serving": 29.3,
+  "Fiber Per Gram": 0.095,
+  "Fiber Per Serving": 3.8,
   "Source": "4"
  },
  {
@@ -966,7 +966,7 @@ document.addEventListener('DOMContentLoaded', () => {
   "Food": "Nestle Cookie Crisp Cereal",
   "Typical serving size (grams)": "40 grams (1 bowl)",
   "Fiber Per Gram": 0.2,
-  "Fiber Per Serving": 8,
+  "Fiber Per Serving": 0.045,
   "Source": "4"
  },
  {
