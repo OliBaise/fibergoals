@@ -131,3 +131,23 @@ button.remove-serving:hover {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   text-align: left; /* Align consumed list to the left */
 }
+
+  /* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 0.5rem;
+    }
+    .container {
+        padding: 0;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    iframe {
+        height: auto;
+        min-height: 400px; /* Ensure maps adjust well on small screens */
+    }
+}
+
