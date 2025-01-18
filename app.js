@@ -1895,7 +1895,7 @@ document.getElementById('food-tables-container').addEventListener('click', (even
 
     const listItem = document.createElement('li');
     listItem.innerHTML = `
-      1 portion of ${foodName}
+      1 portion of ${foodName}{fiberPerServing}
       <button class="remove-serving" data-fiber="${fiberPerServing}">Remove</button>
     `;
     document.getElementById('consumed-list').appendChild(listItem);
