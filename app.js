@@ -1219,7 +1219,7 @@ document.addEventListener('DOMContentLoaded', () => {
  },
  {
   "Food Type": "Fruit",
-  "Food": "Figs,",
+  "Food": "Figs",
   "Typical serving size (grams)": "40 grams (1 fig)",
   "Fiber Per Gram": 0.094,
   "Fiber Per Serving": 3.8,
