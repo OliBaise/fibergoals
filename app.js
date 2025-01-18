@@ -1886,8 +1886,8 @@ document.addEventListener('DOMContentLoaded', () => {
         event.target.closest('tr').querySelector('td:first-child').textContent;
       const listItem = document.createElement('li');
       listItem.innerHTML = `
-        1 portion of ${foodName}
-        <button class="remove-serving" data-fiber="${fiberPerServing}">Remove</button>
+        1 portion of ${foodName} - Added Fiber: ${fiberPerServing.toFixed(1)}g
+      <button class="remove-serving" data-fiber="${fiberPerServing}">Remove</button>
       `;
       document.getElementById('consumed-list').appendChild(listItem);
 
