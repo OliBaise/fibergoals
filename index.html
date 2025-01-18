@@ -1,40 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fiber Goals</title>
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-  <div class="app-container">
-    <h1>Fiber Goals</h1>
-    <form id="fiber-goal-form">
-      <label for="fiber-goal">Enter your daily fiber goal in grams. Most adults are recommended to eat 30 grams of fiber a day:</label>
-      <input type="number" id="fiber-goal" placeholder="Enter fiber goal" required>
-      <button type="submit">Set Goal</button>
-    </form>
-
-    <div id="fiber-stats">
-      <p id="remaining-fiber">Remaining Fiber: <span>0</span> grams</p>
-      <div id="fiber-consumed-list">
-        <h3>Fiber Consumed</h3>
-        <ul id="consumed-list"></ul>
-      </div>
-    </div>
-
-    <div id="food-tables-container">
-      <!-- Tables for each food type will be dynamically inserted here -->
-      
-    </div>
-     <H2>Sources</H2>
-  <P>1: https://www.dietaryguidelines.gov/resources/2020-2025-dietary-guidelines-online-materials/food-sources-select-nutrients/food-sources-fiber</P>
-  <p>2: https://www.med.umich.edu/mott/pdf/mott-fiber-chart.pdf</p>
-  <p>3: https://www.healthline.com/nutrition/healthiest-beans-legumes</p>
-  <p>4:https://www.trolley.co.uk/explore/cereals</p>
+<div id="food-tables-container">
+  <!-- Example of dynamically generated table -->
+  <div class="food-section">
+    <h2>Beans, Pulses, and Legumes</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Food</th>
+            <th>Typical Serving Size (g)</th>
+            <th>Fiber Per Serving (g)</th>
+            <th>Source</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Food">Lentils</td>
+            <td data-label="Typical Serving Size (g)">100</td>
+            <td data-label="Fiber Per Serving (g)">7.9</td>
+            <td data-label="Source">Source 1</td>
+            <td data-label="Action"><button>Add Serving</button></td>
+          </tr>
+          <tr>
+            <td data-label="Food">Chickpeas</td>
+            <td data-label="Typical Serving Size (g)">100</td>
+            <td data-label="Fiber Per Serving (g)">7.6</td>
+            <td data-label="Source">Source 1</td>
+            <td data-label="Action"><button>Add Serving</button></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
-
-  <script src="app.js" defer></script>
-</body>
-</html>
+</div>
