@@ -880,7 +880,7 @@ document.addEventListener('DOMContentLoaded', () => {
   "Fiber Per Gram": 0.018,
   "Fiber Per Serving": 2.8,
   "Source": "1"
- }
+ },
  {
   "Food Type": "Breads",
   "Food": "Bagel",
@@ -1448,7 +1448,6 @@ document.addEventListener('DOMContentLoaded', () => {
   "Fiber Per Serving": 2,
   "Source": "2"
  },
- 
  {
   "Food Type": "Breads",
   "Food": "Chapati",
