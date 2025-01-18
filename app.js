@@ -1,6 +1,173 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Example JSON data
   const foodData = [
+ {
+  "Food Type": "Popular",
+  "Food": "Lentils",
+  "Typical serving size (grams)": "100 grams",
+  "Fiber Per Gram": 0.078,
+  "Fiber Per Serving": 7.8,
+  "Source": "1"
+ },
+  {
+  "Food Type": "Popular",
+  "Food": "Kidney beans",
+  "Typical serving size (grams)": "90 grams",
+  "Fiber Per Gram": 0.063,
+  "Fiber Per Serving": 5.7,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Popular",
+  "Food": "Black beans",
+  "Typical serving size (grams)": "120 grams",
+  "Fiber Per Gram": 0.0625,
+  "Fiber Per Serving": 7.5,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Popular",
+  "Food": "Chickpeas (garbanzo beans)",
+  "Typical serving size (grams)": "100 grams",
+  "Fiber Per Gram": 0.063,
+  "Fiber Per Serving": 6.3,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Popular",
+  "Food": "Wholewheat bread",
+  "Typical serving size (grams)": "43 grams (1 slice)",
+  "Fiber Per Gram": 0.047,
+  "Fiber Per Serving": 2,
+  "Source": "2"
+ },
+  {
+  "Food Type": "Popular",
+  "Food": "Broccoli",
+  "Typical serving size (grams)": "85 grams (6 florets)",
+  "Fiber Per Gram": 0.027,
+  "Fiber Per Serving": 2.3,
+  "Source": "2"
+ },
+     {
+  "Food Type": "Vegetables",
+  "Food": "Baked Beans",
+  "Typical serving size (grams)": "200 grams (1 tin)",
+  "Fiber Per Gram": 0.07,
+  "Fiber Per Serving": 14,
+  "Source": "2"
+ },
+    {
+  "Food Type": "Vegetables",
+  "Food": "Baked potato with skin on",
+  "Typical serving size (grams)": "175 grams (1 medium baking potato)",
+  "Fiber Per Gram": 0.029,
+  "Fiber Per Serving": 5.1,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Popular",
+  "Food": "Apple (skin on)",
+  "Typical serving size (grams)": "100 grams (1 apple)",
+  "Fiber Per Gram": 0.037,
+  "Fiber Per Serving": 3.7,
+  "Source": "2"
+ },
+  {
+  "Food Type": "Popular",
+  "Food": "Banana",
+  "Typical serving size (grams)": "120 grams (1 banana)",
+  "Fiber Per Gram": 0.0225,
+  "Fiber Per Serving": 2.7,
+  "Source": "2"
+ },
+     {
+  "Food Type": "Popular",
+  "Food": "Avocado",
+  "Typical serving size (grams)": "100 grams (1/3 avocado)",
+  "Fiber Per Gram": 0.047,
+  "Fiber Per Serving": 4.7,
+  "Source": "1"
+ },
+    {
+  "Food Type": "Popular",
+  "Food": "Orange",
+  "Typical serving size (grams)": "140 grams (1 orange)",
+  "Fiber Per Gram": 0.02,
+  "Fiber Per Serving": 2.8,
+  "Source": "2"
+ }, {
+  "Food Type": "Popular",
+  "Food": "Raspberries",
+  "Typical serving size (grams)": "125 grams (30 raspberries)",
+  "Fiber Per Gram": 0.067,
+  "Fiber Per Serving": 8.4,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Popular",
+  "Food": "Strawberries",
+  "Typical serving size (grams)": "166 grams (10 strawberries)",
+  "Fiber Per Gram": 0.02,
+  "Fiber Per Serving": 3.3,
+  "Source": "2"
+ },
+     {
+  "Food Type": "Popular",
+  "Food": "Popcorn",
+  "Typical serving size (grams)": "24 grams (3 handfuls)",
+  "Fiber Per Gram": 0.242,
+  "Fiber Per Serving": 5.8,
+  "Source": "1"
+ },
+     {
+  "Food Type": "Popular",
+  "Food": "Peanuts",
+  "Typical serving size (grams)": "40 grams (80 nuts)",
+  "Fiber Per Gram": 0.085,
+  "Fiber Per Serving": 3.4,
+  "Source": "3"
+ },
+     {
+  "Food Type": "Popular",
+  "Food": "Almonds",
+  "Typical serving size (grams)": "18 grams (15 almonds)",
+  "Fiber Per Gram": 0.194,
+  "Fiber Per Serving": 3.5,
+  "Source": "1"
+ },
+     {
+  "Food Type": "US cereal brands",
+  "Food": "General Mills Fiber One",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.433,
+  "Fiber Per Serving": 17.3,
+  "Source": "2"
+ },
+     {
+  "Food Type": "Popular",
+  "Food": "Instant Oatmeal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.107,
+  "Fiber Per Serving": 4.3,
+  "Source": "2"
+ },
+     {
+  "Food Type": "Popular",
+  "Food": "Kellogg's All-Bran Original Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.275,
+  "Fiber Per Serving": 11,
+  "Source": "4"
+ },
+     {
+  "Food Type": "Popular",
+  "Food": "Weetabix Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.095,
+  "Fiber Per Serving": 3.8,
+  "Source": "4"
+ },
 {
   "Food Type": "Beans, pulses and legumes",
   "Food": "Lima beans (white)",
@@ -193,895 +360,7 @@ document.addEventListener('DOMContentLoaded', () => {
   "Fiber Per Serving": 4.5,
   "Source": "1"
  },
- {
-  "Food Type": "Breads",
-  "Food": "Bagel",
-  "Typical serving size (grams)": "110 grams (1 bagel)",
-  "Fiber Per Gram": 0.014,
-  "Fiber Per Serving": 1.5,
-  "Source": "2"
- },
- {
-  "Food Type": "Breads",
-  "Food": "English muffin",
-  "Typical serving size (grams)": "57 grams (1 muffin)",
-  "Fiber Per Gram": 0.026,
-  "Fiber Per Serving": 1.5,
-  "Source": "2"
- },
- {
-  "Food Type": "Breads",
-  "Food": "French bread (baguette)",
-  "Typical serving size (grams)": "59 grams (1 slice)",
-  "Fiber Per Gram": 0.008,
-  "Fiber Per Serving": 0.5,
-  "Source": "2"
- },
- {
-  "Food Type": "Breads",
-  "Food": "Italian bread (ciabatta)",
-  "Typical serving size (grams)": "28 grams (1 slice)",
-  "Fiber Per Gram": 0.089,
-  "Fiber Per Serving": 2.5,
-  "Source": "2"
- },
- {
-  "Food Type": "Breads",
-  "Food": "Multi-grain bread",
-  "Typical serving size (grams)": "26 grams (1 slice)",
-  "Fiber Per Gram": 0.058,
-  "Fiber Per Serving": 1.5,
-  "Source": "2"
- },
- {
-  "Food Type": "Breads",
-  "Food": "Pancake",
-  "Typical serving size (grams)": "34 grams (1 pancake)",
-  "Fiber Per Gram": 0.029,
-  "Fiber Per Serving": 1,
-  "Source": "2"
- },
- {
-  "Food Type": "Breads",
-  "Food": "Pita (white)",
-  "Typical serving size (grams)": "60 grams (1 pita)",
-  "Fiber Per Gram": 0.017,
-  "Fiber Per Serving": 1,
-  "Source": "2"
- },
- {
-  "Food Type": "Breads",
-  "Food": "Wheat bread",
-  "Typical serving size (grams)": "43 grams (1 slice)",
-  "Fiber Per Gram": 0.058,
-  "Fiber Per Serving": 2.5,
-  "Source": "2"
- },
- {
-  "Food Type": "Breads",
-  "Food": "White bread",
-  "Typical serving size (grams)": "38 grams (1 slice)",
-  "Fiber Per Gram": 0.026,
-  "Fiber Per Serving": 1,
-  "Source": "2"
- },
- {
-  "Food Type": "Breads",
-  "Food": "Whole wheat bread",
-  "Typical serving size (grams)": "43 grams (1 slice)",
-  "Fiber Per Gram": 0.047,
-  "Fiber Per Serving": 2,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Apple (skin on)",
-  "Typical serving size (grams)": "100 grams (1 apple)",
-  "Fiber Per Gram": 0.037,
-  "Fiber Per Serving": 3.7,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Apple (skinless)",
-  "Typical serving size (grams)": "95 grams (1 apple)",
-  "Fiber Per Gram": 0.03,
-  "Fiber Per Serving": 2.9,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Apricot",
-  "Typical serving size (grams)": "120 grams (3 apricots)",
-  "Fiber Per Gram": 0.02,
-  "Fiber Per Serving": 2.4,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Banana",
-  "Typical serving size (grams)": "120 grams (1 banana)",
-  "Fiber Per Gram": 0.0225,
-  "Fiber Per Serving": 2.7,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Blueberries",
-  "Typical serving size (grams)": "100 grams (50 blueberries)",
-  "Fiber Per Gram": 0.04,
-  "Fiber Per Serving": 4,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Cantaloupe",
-  "Typical serving size (grams)": "160 grams (4 pieces)",
-  "Fiber Per Gram": 0.001,
-  "Fiber Per Serving": 0.2,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Fruit Salad",
-  "Typical serving size (grams)": "100 grams",
-  "Fiber Per Gram": 0.013,
-  "Fiber Per Serving": 1.3,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Cherries",
-  "Typical serving size (grams)": "100 grams (10 cherries)",
-  "Fiber Per Gram": 0.013,
-  "Fiber Per Serving": 1.3,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Grapefruit",
-  "Typical serving size (grams)": "80 grams (1\/2 a grapefruit)",
-  "Fiber Per Gram": 0.01625,
-  "Fiber Per Serving": 1.3,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Grapes",
-  "Typical serving size (grams)": "150 grams (30 grapes)",
-  "Fiber Per Gram": 0.008,
-  "Fiber Per Serving": 1.2,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Melon",
-  "Typical serving size (grams)": "160 grams (4 pieces)",
-  "Fiber Per Gram": 0.006,
-  "Fiber Per Serving": 1,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Mandarin",
-  "Typical serving size (grams)": "166 grams (2 mandarines)",
-  "Fiber Per Gram": 0.006,
-  "Fiber Per Serving": 1,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Nectarine",
-  "Typical serving size (grams)": "140 grams (1 nectarine)",
-  "Fiber Per Gram": 0.016,
-  "Fiber Per Serving": 2.2,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Orange",
-  "Typical serving size (grams)": "140 grams (1 orange)",
-  "Fiber Per Gram": 0.02,
-  "Fiber Per Serving": 2.8,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Peach",
-  "Typical serving size (grams)": "150 grams (1 peach)",
-  "Fiber Per Gram": 0.01,
-  "Fiber Per Serving": 1.5,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Pear",
-  "Typical serving size (grams)": "180 grams (1 pear)",
-  "Fiber Per Gram": 0.021,
-  "Fiber Per Serving": 3.8,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Pineapple",
-  "Typical serving size (grams)": "160 grams (4 pieces)",
-  "Fiber Per Gram": 0.002,
-  "Fiber Per Serving": 0.3,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Plum",
-  "Typical serving size (grams)": "66 grams (1 plum)",
-  "Fiber Per Gram": 0.015,
-  "Fiber Per Serving": 1,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Prunes",
-  "Typical serving size (grams)": "50 grams (5 grams)",
-  "Fiber Per Gram": 0.06,
-  "Fiber Per Serving": 3,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Raisins",
-  "Typical serving size (grams)": "130 grams (100 raisins)",
-  "Fiber Per Gram": 0.03,
-  "Fiber Per Serving": 3.9,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Raspberries",
-  "Typical serving size (grams)": "125 grams (30 raspberries)",
-  "Fiber Per Gram": 0.067,
-  "Fiber Per Serving": 8.4,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Strawberries",
-  "Typical serving size (grams)": "166 grams (10 strawberries)",
-  "Fiber Per Gram": 0.02,
-  "Fiber Per Serving": 3.3,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Tangerine",
-  "Typical serving size (grams)": "88 grams (1 tangerine)",
-  "Fiber Per Gram": 0.023,
-  "Fiber Per Serving": 2,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Watermelon",
-  "Typical serving size (grams)": "160 grams (4 pieces)",
-  "Fiber Per Gram": 0.005,
-  "Fiber Per Serving": 0.8,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Tomato",
-  "Typical serving size (grams)": "123 grams (1 potato)",
-  "Fiber Per Gram": 0.008,
-  "Fiber Per Serving": 1,
-  "Source": "2"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Breadfruit",
-  "Typical serving size (grams)": "220 grams",
-  "Fiber Per Gram": 0.036,
-  "Fiber Per Serving": 7.9,
-  "Source": "1"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Avocado",
-  "Typical serving size (grams)": "77 grams (1\/4 avocado)",
-  "Fiber Per Gram": 0.065,
-  "Fiber Per Serving": 5,
-  "Source": "1"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Sapodilla",
-  "Typical serving size (grams)": "250 grams (5 sapodillas)",
-  "Fiber Per Gram": 0.04,
-  "Fiber Per Serving": 10,
-  "Source": "1"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Guava",
-  "Typical serving size (grams)": "100 grams (2 guavas)",
-  "Fiber Per Gram": 0.054,
-  "Fiber Per Serving": 5.4,
-  "Source": "1"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Loganberries",
-  "Typical serving size (grams)": "150 grams (30 loganberries)",
-  "Fiber Per Gram": 0.053,
-  "Fiber Per Serving": 8,
-  "Source": "1"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Blackberries",
-  "Typical serving size (grams)": "144 grams 18 blackberries",
-  "Fiber Per Gram": 0.053,
-  "Fiber Per Serving": 7.6,
-  "Source": "1"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Boysenberries",
-  "Typical serving size (grams)": "132 grams (16 boysenberries)",
-  "Fiber Per Gram": 0.053,
-  "Fiber Per Serving": 7,
-  "Source": "1"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Gooseberries",
-  "Typical serving size (grams)": "150 grams (30 gooseberries)",
-  "Fiber Per Gram": 0.043,
-  "Fiber Per Serving": 6.5,
-  "Source": "1"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Asian pear",
-  "Typical serving size (grams)": "178 grams (1 asian pear)",
-  "Fiber Per Gram": 0.037,
-  "Fiber Per Serving": 6.6,
-  "Source": "1"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Passion fruit",
-  "Typical serving size (grams)": "60 grams (1 passion fruit)",
-  "Fiber Per Gram": 0.102,
-  "Fiber Per Serving": 6.1,
-  "Source": "1"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Persimmon",
-  "Typical serving size (grams)": "100 grams (1 persimmon)",
-  "Fiber Per Gram": 0.06,
-  "Fiber Per Serving": 6,
-  "Source": "1"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Kiwifruit",
-  "Typical serving size (grams)": "180 grams (2 kiwis)",
-  "Fiber Per Gram": 0.03,
-  "Fiber Per Serving": 5.4,
-  "Source": "1"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Cherimoya",
-  "Typical serving size (grams)": "160 grams (1\/2 cherimoya edible flesh)",
-  "Fiber Per Gram": 0.03,
-  "Fiber Per Serving": 4.8,
-  "Source": "1"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Durian",
-  "Typical serving size (grams)": "243 grams (1\/2 durian edible flesh)",
-  "Fiber Per Gram": 0.019,
-  "Fiber Per Serving": 4.6,
-  "Source": "1"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Starfruit",
-  "Typical serving size (grams)": "108 grams (1 starfruit)",
-  "Fiber Per Gram": 0.034,
-  "Fiber Per Serving": 3.7,
-  "Source": "1"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Figs,",
-  "Typical serving size (grams)": "40 grams (1 fig)",
-  "Fiber Per Gram": 0.094,
-  "Fiber Per Serving": 3.8,
-  "Source": "1"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Pomegranate seeds",
-  "Typical serving size (grams)": "87 grams",
-  "Fiber Per Gram": 0.04,
-  "Fiber Per Serving": 3.5,
-  "Source": "1"
- },
- {
-  "Food Type": "Fruit",
-  "Food": "Dates",
-  "Typical serving size (grams)": "55 grams (5 dates)",
-  "Fiber Per Gram": 0.053,
-  "Fiber Per Serving": 2.9,
-  "Source": "1"
- },
- {
-  "Food Type": "Grains",
-  "Food": "Popcorn",
-  "Typical serving size (grams)": "24 grams (3 handfuls)",
-  "Fiber Per Gram": 0.242,
-  "Fiber Per Serving": 5.8,
-  "Source": "1"
- },
- {
-  "Food Type": "Grains",
-  "Food": "Bulgur wheat",
-  "Typical serving size (grams)": "113 grams",
-  "Fiber Per Gram": 0.036,
-  "Fiber Per Serving": 4.1,
-  "Source": "1"
- },
- {
-  "Food Type": "Grains",
-  "Food": "Spelt",
-  "Typical serving size (grams)": "194 grams",
-  "Fiber Per Gram": 0.02,
-  "Fiber Per Serving": 3.9,
-  "Source": "1"
- },
- {
-  "Food Type": "Grains",
-  "Food": "Teff",
-  "Typical serving size (grams)": "126 grams",
-  "Fiber Per Gram": 0.029,
-  "Fiber Per Serving": 3.7,
-  "Source": "1"
- },
- {
-  "Food Type": "Grains",
-  "Food": "Barley",
-  "Typical serving size (grams)": "78.5 grams",
-  "Fiber Per Gram": 0.038,
-  "Fiber Per Serving": 3,
-  "Source": "1"
- },
- {
-  "Food Type": "Grains",
-  "Food": "Rolled oats (cooked)",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.105,
-  "Fiber Per Serving": 4.2,
-  "Source": "1"
- },
- {
-  "Food Type": "Grains",
-  "Food": "Whole wheat crackers",
-  "Typical serving size (grams)": "11 grams (3 crackers)",
-  "Fiber Per Gram": 0.264,
-  "Fiber Per Serving": 2.9,
-  "Source": "1"
- },
- {
-  "Food Type": "Breads",
-  "Food": "Chapati",
-  "Typical serving size (grams)": "40 grams (1 chapati)",
-  "Fiber Per Gram": 0.1,
-  "Fiber Per Serving": 4,
-  "Source": "1"
- },
- {
-  "Food Type": "Breads",
-  "Food": "Tortilla (wholewheat)",
-  "Typical serving size (grams)": "14 grams (1 Tortilla)",
-  "Fiber Per Gram": 0.2,
-  "Fiber Per Serving": 2.8,
-  "Source": "1"
- },
- {
-  "Food Type": "Nuts and seeds",
-  "Food": "Pumpkin seeds",
-  "Typical serving size (grams)": "28 grams (300 pumpkin seeds)",
-  "Fiber Per Gram": 0.186,
-  "Fiber Per Serving": 5.2,
-  "Source": "1"
- },
- {
-  "Food Type": "Nuts and seeds",
-  "Food": "Chia seeds",
-  "Typical serving size (grams)": "14 grams",
-  "Fiber Per Gram": 0.293,
-  "Fiber Per Serving": 4.1,
-  "Source": "1"
- },
- {
-  "Food Type": "Nuts and seeds",
-  "Food": "Almonds",
-  "Typical serving size (grams)": "18 grams (15 almonds)",
-  "Fiber Per Gram": 0.194,
-  "Fiber Per Serving": 3.5,
-  "Source": "1"
- },
- {
-  "Food Type": "Nuts and seeds",
-  "Food": "Chestnuts",
-  "Typical serving size (grams)": "16 grams (3 chestnuts)",
-  "Fiber Per Gram": 0.20625,
-  "Fiber Per Serving": 3.3,
-  "Source": "1"
- },
- {
-  "Food Type": "Nuts and seeds",
-  "Food": "Sunflower seeds",
-  "Typical serving size (grams)": "16 grams (100 sunflower seeds)",
-  "Fiber Per Gram": 0.19375,
-  "Fiber Per Serving": 3.1,
-  "Source": "1"
- },
- {
-  "Food Type": "Nuts and seeds",
-  "Food": "Pine nuts",
-  "Typical serving size (grams)": "28 grams (50 pine nuts)",
-  "Fiber Per Gram": 0.107,
-  "Fiber Per Serving": 3,
-  "Source": "1"
- },
- {
-  "Food Type": "Nuts and seeds",
-  "Food": "Pistachio nuts",
-  "Typical serving size (grams)": "15 grams (20 pistachios)",
-  "Fiber Per Gram": 0.193,
-  "Fiber Per Serving": 2.9,
-  "Source": "1"
- },
- {
-  "Food Type": "Nuts and seeds",
-  "Food": "Flax seeds",
-  "Typical serving size (grams)": "7 grams",
-  "Fiber Per Gram": 0.4,
-  "Fiber Per Serving": 2.8,
-  "Source": "1"
- },
- {
-  "Food Type": "Nuts and seeds",
-  "Food": "Hazelnuts",
-  "Typical serving size (grams)": "16 grams (6 hazlenuts)",
-  "Fiber Per Gram": 0.175,
-  "Fiber Per Serving": 2.8,
-  "Source": "1"
- },
- {
-  "Food Type": "Nuts and seeds",
-  "Food": "Coconut flesh",
-  "Typical serving size (grams)": "28 grams (3 tablespoons coconut flesh)",
-  "Fiber Per Gram": 0.169,
-  "Fiber Per Serving": 4.7,
-  "Source": "1"
- },
- {
-  "Food Type": "Nuts and seeds",
-  "Food": "Peanuts",
-  "Typical serving size (grams)": "40 grams (80 nuts)",
-  "Fiber Per Gram": 0.085,
-  "Fiber Per Serving": 3.4,
-  "Source": "3"
- },
- {
-  "Food Type": "Pasta\/Rice",
-  "Food": "White pasta (cooked)",
-  "Typical serving size (grams)": "100 grams",
-  "Fiber Per Gram": 0.032,
-  "Fiber Per Serving": 3.2,
-  "Source": "2"
- },
- {
-  "Food Type": "Pasta\/Rice",
-  "Food": "Whole wheat pasta (cooked)",
-  "Typical serving size (grams)": "100 grams",
-  "Fiber Per Gram": 0.025,
-  "Fiber Per Serving": 2.5,
-  "Source": "2"
- },
- {
-  "Food Type": "Pasta\/Rice",
-  "Food": "Brown rice (cooked)",
-  "Typical serving size (grams)": "75 grams",
-  "Fiber Per Gram": 0.017,
-  "Fiber Per Serving": 1.3,
-  "Source": "2"
- },
- {
-  "Food Type": "Pasta\/Rice",
-  "Food": "White rice (cooked)",
-  "Typical serving size (grams)": "75 grams",
-  "Fiber Per Gram": 0.005,
-  "Fiber Per Serving": 0.4,
-  "Source": "2"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Kellogg's Crunchy Nut Breakfast Cereal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.025,
-  "Fiber Per Serving": 1,
-  "Source": "4"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Kellogg's Frosties Breakfast Cereal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.023,
-  "Fiber Per Serving": 0.9,
-  "Source": "4"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Kellogg's Corn Flakes Breakfast Cereal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.028,
-  "Fiber Per Serving": 1.1,
-  "Source": "4"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Golden Nuggets Nestle Golden Nuggets Cereal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.048,
-  "Fiber Per Serving": 1.9,
-  "Source": "4"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Kellogg's Crunchy Nut Honey & Nut Clusters Cereal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.025,
-  "Fiber Per Serving": 1,
-  "Source": "4"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Kellogg's Special K Peach & Apricot Breakfast Cereal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.0425,
-  "Fiber Per Serving": 1.7,
-  "Source": "4"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Kellogg's Just Right Breakfast Flakes Cereal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.045,
-  "Fiber Per Serving": 1.8,
-  "Source": "4"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Kellogg's Blueberry Wheats Breakfast Cereal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.085,
-  "Fiber Per Serving": 3.4,
-  "Source": "4"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Kellogg's Apricot Wheats Cereal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.825,
-  "Fiber Per Serving": 3.3,
-  "Source": "4"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Kellogg's Krave Chocolate Hazelnut Cereal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.058,
-  "Fiber Per Serving": 2.3,
-  "Source": "4"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Kellogg's All-Bran Original Cereal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.275,
-  "Fiber Per Serving": 11,
-  "Source": "4"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Kellogg's Crunchy Nut Clusters Chocolate Cereal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.025,
-  "Fiber Per Serving": 1,
-  "Source": "4"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Kellogg's Coco Pops Cereal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.035,
-  "Fiber Per Serving": 1.4,
-  "Source": "4"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Shredded Wheat Nestle Shredded Wheat Honey Nut Cereal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.135,
-  "Fiber Per Serving": 5.4,
-  "Source": "4"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Kellogg's Special K Milk Chocolate Cereal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.045,
-  "Fiber Per Serving": 1.8,
-  "Source": "4"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Lion Nestle Lion Caramel & Chocolate Cereal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.053,
-  "Fiber Per Serving": 2.1,
-  "Source": "4"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Nestle Curiously Cinnamon Churros Cereal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.05,
-  "Fiber Per Serving": 2,
-  "Source": "4"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Kellogg's Chocolate Wheats Cereal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.105,
-  "Fiber Per Serving": 4.2,
-  "Source": "4"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Weetabix Crunchy Bran Cereal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.095,
-  "Fiber Per Serving": 3.8,
-  "Source": "4"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Nestle Cookie Crisp Cereal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.2,
-  "Fiber Per Serving": 0.045,
-  "Source": "4"
- },
- {
-  "Food Type": "UK cereal brands",
-  "Food": "Nestle Shredded Wheat",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.138,
-  "Fiber Per Serving": 5.5,
-  "Source": "1"
- },
- {
-  "Food Type": "US cereal brands",
-  "Food": "Banana Nut Crunch",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.131,
-  "Fiber Per Serving": 5.25,
-  "Source": "2"
- },
- {
-  "Food Type": "US cereal brands",
-  "Food": "Kellogg's Bran Bud",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.429,
-  "Fiber Per Serving": 17.2,
-  "Source": "2"
- },
- {
-  "Food Type": "US cereal brands",
-  "Food": "Cheerios",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.107,
-  "Fiber Per Serving": 4.3,
-  "Source": "2"
- },
- {
-  "Food Type": "US cereal brands",
-  "Food": "Corn Pop",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0,
-  "Fiber Per Serving": 0,
-  "Source": "2"
- },
- {
-  "Food Type": "US cereal brands",
-  "Food": "Kellogs Cracklin Oat Bran",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.1,
-  "Fiber Per Serving": 4,
-  "Source": "2"
- },
- {
-  "Food Type": "US cereal brands",
-  "Food": "Cream of Wheat",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.034,
-  "Fiber Per Serving": 1.4,
-  "Source": "2"
- },
- {
-  "Food Type": "US cereal brands",
-  "Food": "General Mills Fiber One",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.433,
-  "Fiber Per Serving": 17.3,
-  "Source": "2"
- },
- {
-  "Food Type": "US cereal brands",
-  "Food": "General Mills Honey Nut Cheerios",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.054,
-  "Fiber Per Serving": 2.2,
-  "Source": "2"
- },
- {
-  "Food Type": "US cereal brands",
-  "Food": "Instant Oatmeal",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.107,
-  "Fiber Per Serving": 4.3,
-  "Source": "2"
- },
- {
-  "Food Type": "US cereal brands",
-  "Food": "Multi-Grain Cheerios",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.1,
-  "Fiber Per Serving": 4,
-  "Source": "2"
- },
- {
-  "Food Type": "US cereal brands",
-  "Food": "Quaker Shredded Wheat",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.116,
-  "Fiber Per Serving": 4.6,
-  "Source": "2"
- },
- {
-  "Food Type": "US cereal brands",
-  "Food": "General Mills Raisin Bran",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.051,
-  "Fiber Per Serving": 2,
-  "Source": "2"
- },
- {
-  "Food Type": "US cereal brands",
-  "Food": "Kellogg's Raisin Bran",
-  "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.139,
-  "Fiber Per Serving": 5.6,
-  "Source": "2"
- },
- {
+    {
   "Food Type": "Vegetables",
   "Food": "Artichoke",
   "Typical serving size (grams)": "120 grams (1 artichoke)",
@@ -1207,14 +486,6 @@ document.addEventListener('DOMContentLoaded', () => {
   "Typical serving size (grams)": "80 grams",
   "Fiber Per Gram": 0.05,
   "Fiber Per Serving": 4,
-  "Source": "2"
- },
- {
-  "Food Type": "Vegetables",
-  "Food": "Pinto beans",
-  "Typical serving size (grams)": "171 grams",
-  "Fiber Per Gram": 0.086,
-  "Fiber Per Serving": 14.7,
   "Source": "2"
  },
  {
@@ -1609,6 +880,896 @@ document.addEventListener('DOMContentLoaded', () => {
   "Fiber Per Serving": 2.8,
   "Source": "1"
  }
+ {
+  "Food Type": "Breads",
+  "Food": "Bagel",
+  "Typical serving size (grams)": "110 grams (1 bagel)",
+  "Fiber Per Gram": 0.014,
+  "Fiber Per Serving": 1.5,
+  "Source": "2"
+ },
+                           {
+  "Food Type": "Fruit",
+  "Food": "Apple (skin on)",
+  "Typical serving size (grams)": "100 grams (1 apple)",
+  "Fiber Per Gram": 0.037,
+  "Fiber Per Serving": 3.7,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Apple (skinless)",
+  "Typical serving size (grams)": "95 grams (1 apple)",
+  "Fiber Per Gram": 0.03,
+  "Fiber Per Serving": 2.9,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Apricot",
+  "Typical serving size (grams)": "120 grams (3 apricots)",
+  "Fiber Per Gram": 0.02,
+  "Fiber Per Serving": 2.4,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Banana",
+  "Typical serving size (grams)": "120 grams (1 banana)",
+  "Fiber Per Gram": 0.0225,
+  "Fiber Per Serving": 2.7,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Blueberries",
+  "Typical serving size (grams)": "100 grams (50 blueberries)",
+  "Fiber Per Gram": 0.04,
+  "Fiber Per Serving": 4,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Cantaloupe",
+  "Typical serving size (grams)": "160 grams (4 pieces)",
+  "Fiber Per Gram": 0.001,
+  "Fiber Per Serving": 0.2,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Fruit Salad",
+  "Typical serving size (grams)": "100 grams",
+  "Fiber Per Gram": 0.013,
+  "Fiber Per Serving": 1.3,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Cherries",
+  "Typical serving size (grams)": "100 grams (10 cherries)",
+  "Fiber Per Gram": 0.013,
+  "Fiber Per Serving": 1.3,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Grapefruit",
+  "Typical serving size (grams)": "80 grams (1\/2 a grapefruit)",
+  "Fiber Per Gram": 0.01625,
+  "Fiber Per Serving": 1.3,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Grapes",
+  "Typical serving size (grams)": "150 grams (30 grapes)",
+  "Fiber Per Gram": 0.008,
+  "Fiber Per Serving": 1.2,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Melon",
+  "Typical serving size (grams)": "160 grams (4 pieces)",
+  "Fiber Per Gram": 0.006,
+  "Fiber Per Serving": 1,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Mandarin",
+  "Typical serving size (grams)": "166 grams (2 mandarines)",
+  "Fiber Per Gram": 0.006,
+  "Fiber Per Serving": 1,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Nectarine",
+  "Typical serving size (grams)": "140 grams (1 nectarine)",
+  "Fiber Per Gram": 0.016,
+  "Fiber Per Serving": 2.2,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Orange",
+  "Typical serving size (grams)": "140 grams (1 orange)",
+  "Fiber Per Gram": 0.02,
+  "Fiber Per Serving": 2.8,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Peach",
+  "Typical serving size (grams)": "150 grams (1 peach)",
+  "Fiber Per Gram": 0.01,
+  "Fiber Per Serving": 1.5,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Pear",
+  "Typical serving size (grams)": "180 grams (1 pear)",
+  "Fiber Per Gram": 0.021,
+  "Fiber Per Serving": 3.8,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Pineapple",
+  "Typical serving size (grams)": "160 grams (4 pieces)",
+  "Fiber Per Gram": 0.002,
+  "Fiber Per Serving": 0.3,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Plum",
+  "Typical serving size (grams)": "66 grams (1 plum)",
+  "Fiber Per Gram": 0.015,
+  "Fiber Per Serving": 1,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Prunes",
+  "Typical serving size (grams)": "50 grams (5 grams)",
+  "Fiber Per Gram": 0.06,
+  "Fiber Per Serving": 3,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Raisins",
+  "Typical serving size (grams)": "130 grams (100 raisins)",
+  "Fiber Per Gram": 0.03,
+  "Fiber Per Serving": 3.9,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Raspberries",
+  "Typical serving size (grams)": "125 grams (30 raspberries)",
+  "Fiber Per Gram": 0.067,
+  "Fiber Per Serving": 8.4,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Strawberries",
+  "Typical serving size (grams)": "166 grams (10 strawberries)",
+  "Fiber Per Gram": 0.02,
+  "Fiber Per Serving": 3.3,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Tangerine",
+  "Typical serving size (grams)": "88 grams (1 tangerine)",
+  "Fiber Per Gram": 0.023,
+  "Fiber Per Serving": 2,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Watermelon",
+  "Typical serving size (grams)": "160 grams (4 pieces)",
+  "Fiber Per Gram": 0.005,
+  "Fiber Per Serving": 0.8,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Tomato",
+  "Typical serving size (grams)": "123 grams (1 potato)",
+  "Fiber Per Gram": 0.008,
+  "Fiber Per Serving": 1,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Breadfruit",
+  "Typical serving size (grams)": "220 grams",
+  "Fiber Per Gram": 0.036,
+  "Fiber Per Serving": 7.9,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Avocado",
+  "Typical serving size (grams)": "100 grams (1/3 avocado)",
+  "Fiber Per Gram": 0.047,
+  "Fiber Per Serving": 4.7,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Sapodilla",
+  "Typical serving size (grams)": "250 grams (5 sapodillas)",
+  "Fiber Per Gram": 0.04,
+  "Fiber Per Serving": 10,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Guava",
+  "Typical serving size (grams)": "100 grams (2 guavas)",
+  "Fiber Per Gram": 0.054,
+  "Fiber Per Serving": 5.4,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Loganberries",
+  "Typical serving size (grams)": "150 grams (30 loganberries)",
+  "Fiber Per Gram": 0.053,
+  "Fiber Per Serving": 8,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Blackberries",
+  "Typical serving size (grams)": "144 grams 18 blackberries",
+  "Fiber Per Gram": 0.053,
+  "Fiber Per Serving": 7.6,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Boysenberries",
+  "Typical serving size (grams)": "132 grams (16 boysenberries)",
+  "Fiber Per Gram": 0.053,
+  "Fiber Per Serving": 7,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Gooseberries",
+  "Typical serving size (grams)": "150 grams (30 gooseberries)",
+  "Fiber Per Gram": 0.043,
+  "Fiber Per Serving": 6.5,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Asian pear",
+  "Typical serving size (grams)": "178 grams (1 asian pear)",
+  "Fiber Per Gram": 0.037,
+  "Fiber Per Serving": 6.6,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Passion fruit",
+  "Typical serving size (grams)": "60 grams (1 passion fruit)",
+  "Fiber Per Gram": 0.102,
+  "Fiber Per Serving": 6.1,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Persimmon",
+  "Typical serving size (grams)": "100 grams (1 persimmon)",
+  "Fiber Per Gram": 0.06,
+  "Fiber Per Serving": 6,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Kiwifruit",
+  "Typical serving size (grams)": "180 grams (2 kiwis)",
+  "Fiber Per Gram": 0.03,
+  "Fiber Per Serving": 5.4,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Cherimoya",
+  "Typical serving size (grams)": "160 grams (1\/2 cherimoya edible flesh)",
+  "Fiber Per Gram": 0.03,
+  "Fiber Per Serving": 4.8,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Durian",
+  "Typical serving size (grams)": "243 grams (1\/2 durian edible flesh)",
+  "Fiber Per Gram": 0.019,
+  "Fiber Per Serving": 4.6,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Starfruit",
+  "Typical serving size (grams)": "108 grams (1 starfruit)",
+  "Fiber Per Gram": 0.034,
+  "Fiber Per Serving": 3.7,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Figs,",
+  "Typical serving size (grams)": "40 grams (1 fig)",
+  "Fiber Per Gram": 0.094,
+  "Fiber Per Serving": 3.8,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Pomegranate seeds",
+  "Typical serving size (grams)": "87 grams",
+  "Fiber Per Gram": 0.04,
+  "Fiber Per Serving": 3.5,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Fruit",
+  "Food": "Dates",
+  "Typical serving size (grams)": "55 grams (5 dates)",
+  "Fiber Per Gram": 0.053,
+  "Fiber Per Serving": 2.9,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Grains",
+  "Food": "Popcorn",
+  "Typical serving size (grams)": "24 grams (3 handfuls)",
+  "Fiber Per Gram": 0.242,
+  "Fiber Per Serving": 5.8,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Grains",
+  "Food": "Bulgur wheat",
+  "Typical serving size (grams)": "113 grams",
+  "Fiber Per Gram": 0.036,
+  "Fiber Per Serving": 4.1,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Grains",
+  "Food": "Spelt",
+  "Typical serving size (grams)": "194 grams",
+  "Fiber Per Gram": 0.02,
+  "Fiber Per Serving": 3.9,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Grains",
+  "Food": "Teff",
+  "Typical serving size (grams)": "126 grams",
+  "Fiber Per Gram": 0.029,
+  "Fiber Per Serving": 3.7,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Grains",
+  "Food": "Barley",
+  "Typical serving size (grams)": "78.5 grams",
+  "Fiber Per Gram": 0.038,
+  "Fiber Per Serving": 3,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Grains",
+  "Food": "Rolled oats (cooked)",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.105,
+  "Fiber Per Serving": 4.2,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Grains",
+  "Food": "Whole wheat crackers",
+  "Typical serving size (grams)": "11 grams (3 crackers)",
+  "Fiber Per Gram": 0.264,
+  "Fiber Per Serving": 2.9,
+  "Source": "1"
+ },{
+  "Food Type": "Nuts and seeds",
+  "Food": "Pumpkin seeds",
+  "Typical serving size (grams)": "28 grams (300 pumpkin seeds)",
+  "Fiber Per Gram": 0.186,
+  "Fiber Per Serving": 5.2,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Nuts and seeds",
+  "Food": "Chia seeds",
+  "Typical serving size (grams)": "14 grams",
+  "Fiber Per Gram": 0.293,
+  "Fiber Per Serving": 4.1,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Nuts and seeds",
+  "Food": "Almonds",
+  "Typical serving size (grams)": "18 grams (15 almonds)",
+  "Fiber Per Gram": 0.194,
+  "Fiber Per Serving": 3.5,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Nuts and seeds",
+  "Food": "Chestnuts",
+  "Typical serving size (grams)": "16 grams (3 chestnuts)",
+  "Fiber Per Gram": 0.20625,
+  "Fiber Per Serving": 3.3,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Nuts and seeds",
+  "Food": "Sunflower seeds",
+  "Typical serving size (grams)": "16 grams (100 sunflower seeds)",
+  "Fiber Per Gram": 0.19375,
+  "Fiber Per Serving": 3.1,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Nuts and seeds",
+  "Food": "Pine nuts",
+  "Typical serving size (grams)": "28 grams (50 pine nuts)",
+  "Fiber Per Gram": 0.107,
+  "Fiber Per Serving": 3,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Nuts and seeds",
+  "Food": "Pistachio nuts",
+  "Typical serving size (grams)": "15 grams (20 pistachios)",
+  "Fiber Per Gram": 0.193,
+  "Fiber Per Serving": 2.9,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Nuts and seeds",
+  "Food": "Flax seeds",
+  "Typical serving size (grams)": "7 grams",
+  "Fiber Per Gram": 0.4,
+  "Fiber Per Serving": 2.8,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Nuts and seeds",
+  "Food": "Hazelnuts",
+  "Typical serving size (grams)": "16 grams (6 hazlenuts)",
+  "Fiber Per Gram": 0.175,
+  "Fiber Per Serving": 2.8,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Nuts and seeds",
+  "Food": "Coconut flesh",
+  "Typical serving size (grams)": "28 grams (3 tablespoons coconut flesh)",
+  "Fiber Per Gram": 0.169,
+  "Fiber Per Serving": 4.7,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Nuts and seeds",
+  "Food": "Peanuts",
+  "Typical serving size (grams)": "40 grams (80 nuts)",
+  "Fiber Per Gram": 0.085,
+  "Fiber Per Serving": 3.4,
+  "Source": "3"
+ },
+ {
+  "Food Type": "Breads",
+  "Food": "English muffin",
+  "Typical serving size (grams)": "57 grams (1 muffin)",
+  "Fiber Per Gram": 0.026,
+  "Fiber Per Serving": 1.5,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Breads",
+  "Food": "French bread (baguette)",
+  "Typical serving size (grams)": "59 grams (1 slice)",
+  "Fiber Per Gram": 0.008,
+  "Fiber Per Serving": 0.5,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Breads",
+  "Food": "Italian bread (ciabatta)",
+  "Typical serving size (grams)": "28 grams (1 slice)",
+  "Fiber Per Gram": 0.089,
+  "Fiber Per Serving": 2.5,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Breads",
+  "Food": "Multi-grain bread",
+  "Typical serving size (grams)": "26 grams (1 slice)",
+  "Fiber Per Gram": 0.058,
+  "Fiber Per Serving": 1.5,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Breads",
+  "Food": "Pancake",
+  "Typical serving size (grams)": "34 grams (1 pancake)",
+  "Fiber Per Gram": 0.029,
+  "Fiber Per Serving": 1,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Breads",
+  "Food": "Pita (white)",
+  "Typical serving size (grams)": "60 grams (1 pita)",
+  "Fiber Per Gram": 0.017,
+  "Fiber Per Serving": 1,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Breads",
+  "Food": "Wheat bread",
+  "Typical serving size (grams)": "43 grams (1 slice)",
+  "Fiber Per Gram": 0.058,
+  "Fiber Per Serving": 2.5,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Breads",
+  "Food": "White bread",
+  "Typical serving size (grams)": "38 grams (1 slice)",
+  "Fiber Per Gram": 0.026,
+  "Fiber Per Serving": 1,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Breads",
+  "Food": "Wholewheat bread",
+  "Typical serving size (grams)": "43 grams (1 slice)",
+  "Fiber Per Gram": 0.047,
+  "Fiber Per Serving": 2,
+  "Source": "2"
+ },
+ 
+ {
+  "Food Type": "Breads",
+  "Food": "Chapati",
+  "Typical serving size (grams)": "40 grams (1 chapati)",
+  "Fiber Per Gram": 0.1,
+  "Fiber Per Serving": 4,
+  "Source": "1"
+ },
+ {
+  "Food Type": "Breads",
+  "Food": "Tortilla (wholewheat)",
+  "Typical serving size (grams)": "14 grams (1 Tortilla)",
+  "Fiber Per Gram": 0.2,
+  "Fiber Per Serving": 2.8,
+  "Source": "1"
+ },
+ 
+ {
+  "Food Type": "Pasta\/Rice",
+  "Food": "White pasta (cooked)",
+  "Typical serving size (grams)": "100 grams",
+  "Fiber Per Gram": 0.032,
+  "Fiber Per Serving": 3.2,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Pasta\/Rice",
+  "Food": "Whole wheat pasta (cooked)",
+  "Typical serving size (grams)": "100 grams",
+  "Fiber Per Gram": 0.025,
+  "Fiber Per Serving": 2.5,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Pasta\/Rice",
+  "Food": "Brown rice (cooked)",
+  "Typical serving size (grams)": "75 grams",
+  "Fiber Per Gram": 0.017,
+  "Fiber Per Serving": 1.3,
+  "Source": "2"
+ },
+ {
+  "Food Type": "Pasta\/Rice",
+  "Food": "White rice (cooked)",
+  "Typical serving size (grams)": "75 grams",
+  "Fiber Per Gram": 0.005,
+  "Fiber Per Serving": 0.4,
+  "Source": "2"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Kellogg's Crunchy Nut Breakfast Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.025,
+  "Fiber Per Serving": 1,
+  "Source": "4"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Kellogg's Frosties Breakfast Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.023,
+  "Fiber Per Serving": 0.9,
+  "Source": "4"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Kellogg's Corn Flakes Breakfast Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.028,
+  "Fiber Per Serving": 1.1,
+  "Source": "4"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Golden Nuggets Nestle Golden Nuggets Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.048,
+  "Fiber Per Serving": 1.9,
+  "Source": "4"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Kellogg's Crunchy Nut Honey & Nut Clusters Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.025,
+  "Fiber Per Serving": 1,
+  "Source": "4"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Kellogg's Special K Peach & Apricot Breakfast Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.0425,
+  "Fiber Per Serving": 1.7,
+  "Source": "4"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Kellogg's Just Right Breakfast Flakes Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.045,
+  "Fiber Per Serving": 1.8,
+  "Source": "4"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Kellogg's Blueberry Wheats Breakfast Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.085,
+  "Fiber Per Serving": 3.4,
+  "Source": "4"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Kellogg's Apricot Wheats Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.825,
+  "Fiber Per Serving": 3.3,
+  "Source": "4"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Kellogg's Krave Chocolate Hazelnut Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.058,
+  "Fiber Per Serving": 2.3,
+  "Source": "4"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Kellogg's All-Bran Original Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.275,
+  "Fiber Per Serving": 11,
+  "Source": "4"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Kellogg's Crunchy Nut Clusters Chocolate Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.025,
+  "Fiber Per Serving": 1,
+  "Source": "4"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Kellogg's Coco Pops Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.035,
+  "Fiber Per Serving": 1.4,
+  "Source": "4"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Shredded Wheat Nestle Shredded Wheat Honey Nut Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.135,
+  "Fiber Per Serving": 5.4,
+  "Source": "4"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Kellogg's Special K Milk Chocolate Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.045,
+  "Fiber Per Serving": 1.8,
+  "Source": "4"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Lion Nestle Lion Caramel & Chocolate Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.053,
+  "Fiber Per Serving": 2.1,
+  "Source": "4"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Nestle Curiously Cinnamon Churros Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.05,
+  "Fiber Per Serving": 2,
+  "Source": "4"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Kellogg's Chocolate Wheats Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.105,
+  "Fiber Per Serving": 4.2,
+  "Source": "4"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Weetabix Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.095,
+  "Fiber Per Serving": 3.8,
+  "Source": "4"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Nestle Cookie Crisp Cereal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.2,
+  "Fiber Per Serving": 0.045,
+  "Source": "4"
+ },
+ {
+  "Food Type": "UK cereal brands",
+  "Food": "Nestle Shredded Wheat",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.138,
+  "Fiber Per Serving": 5.5,
+  "Source": "1"
+ },
+ {
+  "Food Type": "US cereal brands",
+  "Food": "Banana Nut Crunch",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.131,
+  "Fiber Per Serving": 5.25,
+  "Source": "2"
+ },
+ {
+  "Food Type": "US cereal brands",
+  "Food": "Kellogg's Bran Bud",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.429,
+  "Fiber Per Serving": 17.2,
+  "Source": "2"
+ },
+ {
+  "Food Type": "US cereal brands",
+  "Food": "Cheerios",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.107,
+  "Fiber Per Serving": 4.3,
+  "Source": "2"
+ },
+ {
+  "Food Type": "US cereal brands",
+  "Food": "Corn Pop",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0,
+  "Fiber Per Serving": 0,
+  "Source": "2"
+ },
+ {
+  "Food Type": "US cereal brands",
+  "Food": "Kellogs Cracklin Oat Bran",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.1,
+  "Fiber Per Serving": 4,
+  "Source": "2"
+ },
+ {
+  "Food Type": "US cereal brands",
+  "Food": "Cream of Wheat",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.034,
+  "Fiber Per Serving": 1.4,
+  "Source": "2"
+ },
+ {
+  "Food Type": "US cereal brands",
+  "Food": "General Mills Fiber One",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.433,
+  "Fiber Per Serving": 17.3,
+  "Source": "2"
+ },
+ {
+  "Food Type": "US cereal brands",
+  "Food": "General Mills Honey Nut Cheerios",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.054,
+  "Fiber Per Serving": 2.2,
+  "Source": "2"
+ },
+ {
+  "Food Type": "US cereal brands",
+  "Food": "Instant Oatmeal",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.107,
+  "Fiber Per Serving": 4.3,
+  "Source": "2"
+ },
+ {
+  "Food Type": "US cereal brands",
+  "Food": "Multi-Grain Cheerios",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.1,
+  "Fiber Per Serving": 4,
+  "Source": "2"
+ },
+ {
+  "Food Type": "US cereal brands",
+  "Food": "Quaker Shredded Wheat",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.116,
+  "Fiber Per Serving": 4.6,
+  "Source": "2"
+ },
+ {
+  "Food Type": "US cereal brands",
+  "Food": "General Mills Raisin Bran",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.051,
+  "Fiber Per Serving": 2,
+  "Source": "2"
+ },
+ {
+  "Food Type": "US cereal brands",
+  "Food": "Kellogg's Raisin Bran",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.139,
+  "Fiber Per Serving": 5.6,
+  "Source": "2"
+ },
+ 
 ];
 
   const tableOrder = [
