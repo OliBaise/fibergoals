@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
   "Fiber Per Serving": 2.3,
   "Source": "2"
  },
-     {
+ {
   "Food Type": "Vegetables",
   "Food": "Baked Beans",
   "Typical serving size (grams)": "200 grams (1 tin)",
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
   "Fiber Per Serving": 2.7,
   "Source": "2"
  },
-     {
+ {
   "Food Type": "Popular",
   "Food": "Avocado",
   "Typical serving size (grams)": "100 grams (1/3 avocado)",
@@ -96,7 +96,8 @@ document.addEventListener('DOMContentLoaded', () => {
   "Fiber Per Gram": 0.02,
   "Fiber Per Serving": 2.8,
   "Source": "2"
- }, {
+ }, 
+    {
   "Food Type": "Popular",
   "Food": "Raspberries",
   "Typical serving size (grams)": "125 grams (30 raspberries)",
@@ -1769,20 +1770,7 @@ document.addEventListener('DOMContentLoaded', () => {
   "Fiber Per Serving": 5.6,
   "Source": "2"
  },
- 
 ];
-
-  const tableOrder = [
-    "Beans, pulses and legumes",
-    "Vegetables",
-    "Fruit",
-    "Nuts and seeds",
-    "Grains",
-    "Breads",
-    "Pasta/Rice",
-    "US Cereal brands",
-    "UK Cereal Brands"
-  ];
 
  let fiberGoal = 0; // Initialize fiber goal
   let totalFiberConsumed = 0; // Track total fiber consumed
