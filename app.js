@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
   "Source": "2"
  },
  {
-  "Food Type": "Vegetables",
+  "Food Type": "Popular",
   "Food": "Baked Beans",
   "Typical serving size (grams)": "200 grams (1 tin)",
   "Fiber Per Gram": 0.07,
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
   "Source": "2"
  },
     {
-  "Food Type": "Vegetables",
+  "Food Type": "Popular",
   "Food": "Baked potato with skin on",
   "Typical serving size (grams)": "175 grams (1 medium baking potato)",
   "Fiber Per Gram": 0.029,
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
   "Source": "1"
  },
      {
-  "Food Type": "US cereal brands",
+  "Food Type": "Popular",
   "Food": "General Mills Fiber One",
   "Typical serving size (grams)": "40 grams (1 bowl)",
   "Fiber Per Gram": 0.433,
