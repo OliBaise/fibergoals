@@ -1884,10 +1884,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const foodName =
         event.target.closest('tr').querySelector('td:first-child').textContent;
       const listItem = document.createElement('li');
-      listItem.innerHTML = `
-        1 portion of ${foodName}
-        <button class="remove-serving" data-fiber="${fiberPerServing}">Remove</button>
-      `;
+listItem.innerHTML = `
+  ${foodName} - Fiber: ${fiberPerServing.toFixed(1)}g
+  <button class="remove-serving" data-fiber="${fiberPerServing}">Remove</button>
+`;
       document.getElementById('consumed-list').appendChild(listItem);
 
       // Add event listener for remove button
