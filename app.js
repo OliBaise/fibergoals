@@ -137,6 +137,14 @@ document.addEventListener('DOMContentLoaded', () => {
   "Fiber Per Serving": 3.5,
   "Source": "1"
  },
+    {
+  "Food Type": "Popular",
+  "Food": "Kellogg's Bran Bud",
+  "Typical serving size (grams)": "40 grams (1 bowl)",
+  "Fiber Per Gram": 0.429,
+  "Fiber Per Serving": 17.2,
+  "Source": "2"
+ },
      {
   "Food Type": "Popular",
   "Food": "General Mills Fiber One",
