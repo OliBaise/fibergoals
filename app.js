@@ -1273,6 +1273,14 @@ document.addEventListener('DOMContentLoaded', () => {
   "Fiber Per Serving": 3,
   "Source": "1"
  },
+     {
+  "Food Type": "Grains",
+  "Food": "Quinoa",
+  "Typical serving size (grams)": "185 grams",
+  "Fiber Per Gram": 0.027,
+  "Fiber Per Serving": 5,
+  "Source": "1"
+ },
  {
   "Food Type": "Grains",
   "Food": "Rolled oats (cooked)",
