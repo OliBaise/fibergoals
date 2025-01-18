@@ -18,21 +18,6 @@ body {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for boxed effect */
 }
 
-/* Add spacing between the fiber goal section and the remaining fiber section */
-#fiber-goal-form {
-  margin-bottom: 30px; /* Increase bottom margin */
-}
-
-#fiber-stats {
-  margin-bottom: 30px;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
 /* Page title */
 h1 {
   text-align: center;
@@ -61,41 +46,34 @@ h1 {
 }
 
 /* Table styling */
-.table-container {
-  overflow-x: auto; /* Enable horizontal scrolling */
-  margin-bottom: 20px; /* Add spacing between tables */
-  padding: 10px; /* Add padding to prevent overlap with container edges */
-}
-
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  font-size: 16px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
 }
 
 th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-  font-size: 14px; /* Adjust font size for better readability on small screens */
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
 }
 
 th {
-  background-color: #f2f2f2;
-  font-weight: bold;
-}
-
+    background-color: #f2f2f2;
+    font-weight: bold;
 /* Table row hover effect */
 .food-table tbody tr:hover {
   background-color: #f9f9f9; /* Light gray hover effect */
 }
+
 
 /* Add Serving Button Styling */
 button.add-serving {
   padding: 10px 15px;
   background-color: #4CAF50; /* Green button */
   color: white;
+  color: green;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -124,6 +102,16 @@ button.remove-serving:hover {
 }
 
 /* Fiber Stats Styling */
+#fiber-stats {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
 #fiber-stats p {
   font-size: 18px;
   margin-bottom: 10px;
@@ -143,43 +131,4 @@ button.remove-serving:hover {
   border-radius: 5px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   text-align: left; /* Align consumed list to the left */
-}
-
-/* Responsive table styles */
-@media (max-width: 576px) {
-  .table-container {
-    padding: 5px; /* Reduce padding for smaller screens */
-  }
-  table {
-    display: block; /* Make table block-level for small screens */
-  }
-  thead {
-    display: none; /* Hide table headers */
-  }
-  tbody tr {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    padding: 10px;
-    background-color: #fff;
-  }
-  tbody td {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 10px;
-    border: none;
-    border-bottom: 1px solid #ddd;
-  }
-  tbody td:last-child {
-    border-bottom: none; /* Remove border from the last item */
-  }
-  tbody td:before {
-    content: attr(data-label); /* Display header text dynamically */
-    font-weight: bold;
-    flex-basis: 50%;
-    text-align: left;
-  }
 }
