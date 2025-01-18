@@ -981,8 +981,8 @@ document.addEventListener('DOMContentLoaded', () => {
   "Food Type": "US cereal brands",
   "Food": "Banana Nut Crunch",
   "Typical serving size (grams)": "40 grams (1 bowl)",
-  "Fiber Per Gram": 0.068,
-  "Fiber Per Serving": 2.7,
+  "Fiber Per Gram": 0.131,
+  "Fiber Per Serving": 5.25,
   "Source": "2"
  },
  {
