@@ -1788,7 +1788,7 @@ document.addEventListener('DOMContentLoaded', () => {
  },
 ];
 
- let fiberGoal = 0; // Initialize fiber goal
+let fiberGoal = 0; // Initialize fiber goal
 let totalFiberConsumed = 0; // Track total fiber consumed
 
 // Handle setting the fiber goal
@@ -1895,7 +1895,7 @@ document.getElementById('food-tables-container').addEventListener('click', (even
 
     const listItem = document.createElement('li');
     listItem.innerHTML = `
-      1 portion of ${foodName}{fiberPerServing}
+      1 portion of ${foodName}
       <button class="remove-serving" data-fiber="${fiberPerServing}">Remove</button>
     `;
     document.getElementById('consumed-list').appendChild(listItem);
@@ -1934,3 +1934,4 @@ const foodData = [
 
 // Call the function to generate tables
 generateFoodTables(foodData);
+
