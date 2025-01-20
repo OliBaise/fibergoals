@@ -7,8 +7,12 @@ body {
   color: #333;
 }
 
-.fiber-goal p {
+.fiber-goal-section p {
   margin-bottom: 10px; /* Adjust the value as needed */
+}
+
+.fiber-goal-section input {
+  margin-top: 5px; /* Optional, if additional spacing is desired */
 }
 
 /* Boxed Layout */
