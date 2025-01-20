@@ -47,7 +47,7 @@ h1 {
 
 /* Table styling */
 table {
-    table-layout:auto
+    table-layout:fixed
     width: 10%;
     border-collapse: collapse;
     margin-top: 20px;
