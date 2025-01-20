@@ -5,6 +5,11 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
+  box-sizing: border-box; /* Ensure padding and borders are included in dimensions */
+}
+
+*, *::before, *::after {
+  box-sizing: inherit; /* Inherit box-sizing for all elements */
 }
 
 /* Boxed Layout */
@@ -58,7 +63,6 @@ table {
   border-collapse: collapse;
   margin-top: 20px;
   font-size: 16px;
-  min-width: 600px; /* Ensure table does not shrink too much */
 }
 
 th, td {
@@ -128,40 +132,4 @@ button.remove-serving:hover {
 }
 
 /* Fiber Consumed List */
-#fiber-consumed-list ul {
-  list-style: none;
-  padding: 0;
-}
-
-#fiber-consumed-list li {
-  margin-bottom: 8px;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: left; /* Align consumed list to the left */
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 24px; /* Smaller font for titles */
-  }
-
-  .app-container {
-    padding: 15px; /* Adjust padding for smaller screens */
-  }
-
-  .food-section h2 {
-    font-size: 18px; /* Adjust header font size */
-  }
-
-  table {
-    font-size: 14px; /* Smaller font size for tables */
-  }
-
-  button.add-serving, button.remove-serving {
-    font-size: 14px; /* Adjust button font size */
-  }
-}
+#fiber-consumed-list
