@@ -7,6 +7,10 @@ body {
   color: #333;
 }
 
+.fiber-goal-form p {
+  margin-bottom: 10px; /* Adjust the value as needed */
+}
+
 /* Boxed Layout */
 .app-container {
   max-width: 800px; /* Wider boxed layout */
