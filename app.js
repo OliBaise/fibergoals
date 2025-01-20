@@ -484,7 +484,7 @@ document.addEventListener('DOMContentLoaded', () => {
  {
   "Food Type": "Vegetables",
   "Food": "Onion",
-  "Typical serving size (grams)": "80 grams (1\2 an onion)",
+  "Typical serving size (grams)": "80 grams (half an onion)",
   "Fiber Per Gram": 0.013,
   "Fiber Per Serving": 1,
   "Source": "2"
@@ -524,7 +524,7 @@ document.addEventListener('DOMContentLoaded', () => {
  {
   "Food Type": "Vegetables",
   "Food": "Squash",
-  "Typical serving size (grams)": "116 grams (1\2 a squash)",
+  "Typical serving size (grams)": "116 grams (half a squash)",
   "Fiber Per Gram": 0.026,
   "Fiber Per Serving": 3,
   "Source": "2"
@@ -532,7 +532,7 @@ document.addEventListener('DOMContentLoaded', () => {
  {
   "Food Type": "Vegetables",
   "Food": "Sweet potato with skin on",
-  "Typical serving size (grams)": "130 grams (1\2 a sweet potato)",
+  "Typical serving size (grams)": "130 grams (half a sweet potato)",
   "Fiber Per Gram": 0.023,
   "Fiber Per Serving": 3,
   "Source": "2"
