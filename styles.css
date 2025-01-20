@@ -133,3 +133,13 @@ button.remove-serving:hover {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   text-align: left; /* Align consumed list to the left */
 }
+
+  @media (max-width: 600px) {
+    .app-container {
+        padding: 10px;
+    }
+    table {
+        font-size: 14px;
+    }
+}
+
