@@ -5,30 +5,23 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  box-sizing: border-box; /* Ensure padding and borders are included in dimensions */
-}
-
-*, *::before, *::after {
-  box-sizing: inherit; /* Inherit box-sizing for all elements */
 }
 
 /* Boxed Layout */
 .app-container {
   max-width: 800px; /* Wider boxed layout */
-  width: 90%; /* Adjust width for smaller screens */
   margin: auto; /* Centered with top margin */
   padding: 20px;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for boxed effect */
-  overflow-x: hidden; /* Prevent horizontal overflow for the container */
 }
 
 /* Page title */
 h1 {
   text-align: center;
-  font-size: 28px; /* Adjust font size for smaller screens */
+  font-size: 32px; /* Larger font size */
   color: #4CAF50; /* Green color matching the table */
   margin-bottom: 20px;
 }
@@ -44,7 +37,7 @@ h1 {
 }
 
 .food-section h2 {
-  font-size: 22px; /* Adjust font size for headers */
+  font-size: 24px; /* Slightly larger headers */
   margin-bottom: 15px;
   color: #4CAF50;
   text-align: left; /* Align headers to the left */
@@ -53,44 +46,39 @@ h1 {
 }
 
 /* Table styling */
-.table-container {
-  overflow-x: auto; /* Allow horizontal scrolling for tables */
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-}
-
 table {
-  width: 100%; /* Make table width responsive */
-  border-collapse: collapse;
-  margin-top: 20px;
-  font-size: 16px;
+    table-layout:fixed
+    width: 10%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
 }
 
 th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
 }
 
 th {
-  background-color: #f2f2f2;
-  font-weight: bold;
-}
-
+    background-color: #f2f2f2;
+    font-weight: bold;
 /* Table row hover effect */
 .food-table tbody tr:hover {
   background-color: #f9f9f9; /* Light gray hover effect */
 }
 
+
 /* Add Serving Button Styling */
 button.add-serving {
-  width: 100%; /* Full width for responsiveness */
   padding: 10px 15px;
   background-color: #4CAF50; /* Green button */
   color: white;
+  color: green;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   transition: background-color 0.3s ease;
 }
 
@@ -100,15 +88,14 @@ button.add-serving:hover {
 
 /* Remove Button Styling */
 button.remove-serving {
-  width: 100%; /* Full width for responsiveness */
   padding: 10px 15px;
   background-color: red; /* Red for remove buttons */
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
-  margin-top: 10px;
+  font-size: 14px;
+  margin-left: 10px;
 }
 
 button.remove-serving:hover {
@@ -132,4 +119,26 @@ button.remove-serving:hover {
 }
 
 /* Fiber Consumed List */
-#fiber-consumed-list
+#fiber-consumed-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+#fiber-consumed-list li {
+  margin-bottom: 8px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align consumed list to the left */
+}
+
+  @media (max-width: 600px) {
+    .app-container {
+        padding: 10px;
+    }
+    table {
+        font-size: 14px;
+    }
+}
