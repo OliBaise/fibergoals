@@ -17,6 +17,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for boxed effect */
+  overflow-x: hidden; /* Prevent horizontal overflow for the container */
 }
 
 /* Page title */
@@ -47,11 +48,17 @@ h1 {
 }
 
 /* Table styling */
+.table-container {
+  overflow-x: auto; /* Allow horizontal scrolling for tables */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
 table {
   width: 100%; /* Make table width responsive */
   border-collapse: collapse;
   margin-top: 20px;
   font-size: 16px;
+  min-width: 600px; /* Ensure table does not shrink too much */
 }
 
 th, td {
