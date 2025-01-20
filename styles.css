@@ -10,6 +10,7 @@ body {
 /* Boxed Layout */
 .app-container {
   max-width: 800px; /* Wider boxed layout */
+  width: 90%; /* Adjust width for smaller screens */
   margin: auto; /* Centered with top margin */
   padding: 20px;
   background-color: #fff;
@@ -21,7 +22,7 @@ body {
 /* Page title */
 h1 {
   text-align: center;
-  font-size: 32px; /* Larger font size */
+  font-size: 28px; /* Adjust font size for smaller screens */
   color: #4CAF50; /* Green color matching the table */
   margin-bottom: 20px;
 }
@@ -37,7 +38,7 @@ h1 {
 }
 
 .food-section h2 {
-  font-size: 24px; /* Slightly larger headers */
+  font-size: 22px; /* Adjust font size for headers */
   margin-bottom: 15px;
   color: #4CAF50;
   text-align: left; /* Align headers to the left */
@@ -47,38 +48,38 @@ h1 {
 
 /* Table styling */
 table {
-    table-layout:fixed
-    width: 10%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    font-size: 16px;
+  width: 100%; /* Make table width responsive */
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
 }
 
 th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 
 th {
-    background-color: #f2f2f2;
-    font-weight: bold;
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
 /* Table row hover effect */
 .food-table tbody tr:hover {
   background-color: #f9f9f9; /* Light gray hover effect */
 }
 
-
 /* Add Serving Button Styling */
 button.add-serving {
+  width: 100%; /* Full width for responsiveness */
   padding: 10px 15px;
   background-color: #4CAF50; /* Green button */
   color: white;
-  color: green;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   transition: background-color 0.3s ease;
 }
 
@@ -88,14 +89,15 @@ button.add-serving:hover {
 
 /* Remove Button Styling */
 button.remove-serving {
+  width: 100%; /* Full width for responsiveness */
   padding: 10px 15px;
   background-color: red; /* Red for remove buttons */
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 14px;
-  margin-left: 10px;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 button.remove-serving:hover {
@@ -134,12 +136,25 @@ button.remove-serving:hover {
   text-align: left; /* Align consumed list to the left */
 }
 
-  @media (max-width: 600px) {
-    .app-container {
-        padding: 10px;
-    }
-    table {
-        font-size: 14px;
-    }
-}
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px; /* Smaller font for titles */
+  }
 
+  .app-container {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .food-section h2 {
+    font-size: 18px; /* Adjust header font size */
+  }
+
+  table {
+    font-size: 14px; /* Smaller font size for tables */
+  }
+
+  button.add-serving, button.remove-serving {
+    font-size: 14px; /* Adjust button font size */
+  }
+}
