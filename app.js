@@ -53,8 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
   "Food Type": "Popular",
   "Food": "Baked Beans",
   "Typical serving size (grams)": "200 grams (1 tin)",
-  "Fiber Per Gram": 0.07,
-  "Fiber Per Serving": 14,
+  "Fiber Per Gram": 0.04,
+  "Fiber Per Serving": 8,
   "Source": "2"
  },
     {
@@ -389,8 +389,8 @@ document.addEventListener('DOMContentLoaded', () => {
   "Food Type": "Vegetables",
   "Food": "Baked Beans",
   "Typical serving size (grams)": "200 grams (1 tin)",
-  "Fiber Per Gram": 0.07,
-  "Fiber Per Serving": 14,
+  "Fiber Per Gram": 0.04,
+  "Fiber Per Serving": 8,
   "Source": "2"
  },
  {
