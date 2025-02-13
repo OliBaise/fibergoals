@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
       <thead>
         <tr>
           <th>Food</th>
-          <th>Typical Serving Size (g)</th>
-          <th>Fiber Per Serving (g)</th>
+          <th>Typical Serving Size (grams)</th>
+          <th>Fiber Per Serving (grams)</th>
           <th>Source</th>
           <th>Action</th>
         </tr>
