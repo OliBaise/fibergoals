@@ -42,6 +42,12 @@ h1 {
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.food-tables-container {
+  width: 100%;
+  min-width: 600px; /* Adjust based on your table's content */
 }
 
 .food-section h2 {
