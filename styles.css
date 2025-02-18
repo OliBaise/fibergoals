@@ -42,6 +42,12 @@ h1 {
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.food-tables-container {
+  width: 100%;
+  min-width: 600px; /* Adjust based on your table's content */
 }
 
 .food-section h2 {
@@ -51,38 +57,42 @@ h1 {
   text-align: left; /* Align headers to the left */
   border-bottom: 2px solid #4CAF50; /* Green underline */
   padding-bottom: 5px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Table styling */
 table {
-    table-layout:fixed
-    width: 10%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    font-size: 16px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
 }
 
 th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+  border: 1px solid #ddd;
+  padding: 4px;
+  text-align: left;
+  word-wrap: break-word; /* Allow text to wrap within cells */
+  white-space: normal; /* Allow text to wrap within cells */
+  overflow: hidden; /* Hide overflow text */
 }
 
 th {
-    background-color: #f2f2f2;
-    font-weight: bold;
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
 /* Table row hover effect */
 .food-table tbody tr:hover {
   background-color: #f9f9f9; /* Light gray hover effect */
 }
-
 
 /* Add Serving Button Styling */
 button.add-serving {
   padding: 10px 15px;
   background-color: #4CAF50; /* Green button */
   color: white;
-  color: green;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -142,11 +152,40 @@ button.remove-serving:hover {
   text-align: left; /* Align consumed list to the left */
 }
 
-  @media (max-width: 600px) {
-    .app-container {
-        padding: 10px;
-    }
-    table {
-        font-size: 14px;
-    }
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  .food-tables-container {
+    min-width: 500px; /* Adjust based on your table's content */
+  }
+
+  table {
+    font-size: 10px; /* Smaller font size */
+  }
+
+  th, td {
+    padding: 3px; /* Smaller padding */
+    margin: 1px;
+    word-wrap: break-word; /* Allow text to wrap within cells */
+    white-space: normal; /* Allow text to wrap within cells */
+    overflow: hidden; /* Hide overflow text */
+    max-width: 80px; /* Set a maximum width for table cells */
+    word-break: break-word; /* Break words at appropriate points */
+  }
+
+  th {
+    font-size: 12px; /* Slightly smaller font size for headers */
+  }
+
+  td {
+    font-size: 10px; /* Smaller font size for table data */
+  }
+
+  button.add-serving, button.remove-serving {
+    padding: 3px 5px; /* Smaller padding for buttons */
+    font-size: 10px; /* Smaller font size for buttons */
+  }
 }
